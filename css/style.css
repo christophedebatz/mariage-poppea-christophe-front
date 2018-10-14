@@ -355,7 +355,7 @@ slider-area
 }
 
 .single-slider {
-    background: url("../img/slider/1.jpg") no-repeat center center / cover;
+    background: url("../img/slider/7.jpg") no-repeat center center / cover;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -379,23 +379,23 @@ slider-area
 }
 
 .slider-2 {
-    background: url("../img/slider/2.jpg") no-repeat center center / cover;
+    background: url("../img/slider/8.jpg") no-repeat center center / cover;
 }
 
 .slider-3 {
-    background: url("../img/slider/3.jpg") no-repeat center center / cover;
+    background: url("../img/slider/9.jpg") no-repeat center center / cover;
 }
 
 .single-slider2 {
-    background: url("../img/slider/5.jpg") no-repeat center center / cover;
+    background: url("../img/slider/7.jpg") no-repeat center center / cover;
 }
 
 .slider-4 {
-    background: url("../img/slider/4.jpg") no-repeat center center / cover;
+    background: url("../img/slider/8.jpg") no-repeat center center / cover;
 }
 
 .slider-5 {
-    background: url("../img/slider/6.jpg") no-repeat center center / cover;
+    background: url("../img/slider/10.jpg") no-repeat center center / cover;
 }
 
 
@@ -1351,14 +1351,14 @@ select.form-control:not([size]):not([multiple]) {
     border-radius: 5px;
     color: #666;
     font-size: 14px;
-    -webkit-appearance:none;   
-    -ms-appearance:none;      
-    -o-appearance:none;                 
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
     appearance:none;
     -moz-appearance: none;
     background:#fff url("../img/select-icon.png") no-repeat calc(100% - 15px) center;
     position: relative;
-     
+
 }
 .contact-textarea {
     width: 100%;
@@ -1525,6 +1525,10 @@ home-page2
     width: 100%;
     height: 100%;
     font-size: 20px;
+}
+
+.ptb--70 {
+    padding: 100px 0 !important;
 }
 
 .count-down-area2 {
@@ -2223,13 +2227,13 @@ h4.comment-title {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    font-weight: 700; 
+    font-weight: 700;
 }
 
 .leave-comment-area form #c_submit:hover {
     background-color: #05987a;
     color: #fff;
-    
+
 }
 
 
