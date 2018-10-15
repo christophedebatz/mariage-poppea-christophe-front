@@ -66,7 +66,15 @@ else if (isset($_GET['userId'])) {
 // user wants to update or to make another reservation
 else if (isset($_GET['bookUserId']) && !is_null($body)) {
     $jsonBody = json_decode($body);
-    if (!property_exists($jsonBody, 'fiancailles') || !property_exists($jsonBody, 'mairie') || !property_exists($jsonBody, 'eglise')) {
+    if (!isset($jsonBody->fiancailles) || !isset($jsonBody->mairie) || !isset($jsonBody->eglise)) {
+        $debug = 'isset($jsonBody->fiancailles)=' . isset($jsonBody->fiancailles);
+        $debug .= '\nis_null($jsonBody->fiancailles)=' . is_null($jsonBody->fiancailles);
+        $debug = '\nisset($jsonBody->mairie)=' . isset($jsonBody->mairie);
+        $debug .= '\nis_null($jsonBody->mairie)=' . is_null($jsonBody->mairie);
+        $debug = '\nisset($jsonBody->eglise)=' . isset($jsonBody->eglise);
+        $debug .= '\nis_null($jsonBody->eglise)=' . is_null($jsonBody->eglise);
+        $debug .= '\n$body=' . $body;
+        response($debug);
         response(makeError('invalid.input'), 400);
     }
     $newReservation = [

@@ -1,1 +1,1 @@
-[{"userId":1,"fiancailles":false,"mairie":false,"eglise":true},{"userId":0,"fiancailles":false,"mairie":false,"eglise":true}]
+[{"userId":1,"fiancailles":true,"mairie":false,"eglise":true},{"userId":0,"fiancailles":false,"mairie":true,"eglise":false}]

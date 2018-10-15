@@ -107,6 +107,9 @@ $(document).ready(function () {
     document.getElementById('guest').addEventListener('change', function () {
       let userId = document.getElementById('guest').value;
       let userName = $('#guest option:selected').text();
+      $('#container-fiancailles').hide();
+      $('#container-mairie').hide();
+      $('#container-eglise').hide();
 
       $.getJSON(`http://localhost:7888/booking.php?userId=${userId}`, function (book) {
         if (book.reservation && book.user) {
@@ -133,16 +136,19 @@ $(document).ready(function () {
         }
       })
         .error(function () {
+          $('#reservations').show();
           $('#already-resa')
             .html(`Bonjour <strong>${userName}</strong>, tu n'as pas encore répondu aux invitations, nous t'invitons à le faire dès maintenant !`)
             .show();
           $('#response-eglise').prop('checked', false);
           $('#response-mairie').prop('checked', false);
           $('#response-fiancailles').prop('checked', false);
+          $('#container-fiancailles').hide();
+          $('#container-mairie').show();
+          $('#container-eglise').show();
         })
         .complete(function () {
           $('#reservations').show();
-
           document.getElementById('response-fiancailles').addEventListener('change', function () {
             changeListener(userId)
           });
@@ -162,8 +168,24 @@ $(document).ready(function () {
     let eglise = $('#response-eglise').prop('checked');
     let mairie = $('#response-mairie').prop('checked');
     postResponse(userId, fiancailles, mairie, eglise, function (err, data) {
-      console.log('err=', err);
-      console.log('data=', data);
+      if (!err) {
+        $.toast({
+            heading: 'Success',
+            text: 'Réponse enregistrée avec succès !',
+            showHideTransition: 'slide',
+            icon: 'success',
+            position: 'top-right',
+            loaderBg: '#b6d65a'
+        });
+      } else {
+        $.toast({
+          heading: 'Error',
+          text: 'Erreur dans lors de l\'enregistrement de votre réponse. Veuillez réessayer et/ou nous contacter...',
+          showHideTransition: 'slide',
+          icon: 'error',
+          position: 'top-right',
+      });
+      }
     });
   }
 

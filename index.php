@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="css/default-css.css">
     <!-- style.css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.toast.css">
     <!-- responsive.css -->
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -901,6 +902,8 @@ gallery area end -->
 <script src="js/jquery-sticky-menu.js"></script>
 <!-- jquery-validation.js -->
 <script src="js/validation.js"></script>
+<script src="js/jquery.toast.js"></script>
+
 <!-- main.js -->
 <script src="js/main.js"></script>
 </body>

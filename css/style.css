@@ -2296,3 +2296,11 @@ h4.comment-title {
     cursor: pointer !important;
     font-weight: bold;
 }
+
+.section-title2 h2 {
+  color: #000000 !important;
+}
+
+.section-title2.section-title3 h2:before {
+  filter: grayscale(100%) !important;
+}
