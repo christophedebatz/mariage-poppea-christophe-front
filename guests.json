@@ -10,5 +10,165 @@
         "isWitness": "true",
         "hostName": "Christophe de Batz",
         "invitations": [ "fiancailles", "eglise" ]
-    }
-]
+    },
+      {
+          "fullName": "Kévin Barberi",
+          "hostName": "Christophe de Batz",
+          "isWitness": true,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Alexis de Batz",
+          "hostName": "Christophe de Batz",
+          "isWitness": true,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Ségolène de Batz",
+          "hostName": "Christophe de Batz",
+          "isWitness": true,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Caroline de Batz",
+          "hostName": "Christophe de Batz",
+          "isWitness": true,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Pascale de Batz",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Hubert de Batz",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Gabriel du Chalard",
+          "hostName": "Christophe de Batz",
+          "isWitness": true,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Julien Fontaine",
+          "hostName": "Christophe de Batz",
+          "isWitness": true,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Jérôme Frandon",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Arthur Gilbert",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Adrien Lesseur",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Marc Ghorayeb",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Benjamin Bertrand",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Guillaume Carbonnel",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Julien Gony",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      },
+      {
+          "fullName": "Guillaume Jamme",
+          "hostName": "Christophe de Batz",
+          "isWitness": false,
+          "invitations": [
+              "fiancailles",
+              "mairie",
+              "eglise"
+          ]
+      }
+  ]

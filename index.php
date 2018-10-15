@@ -820,7 +820,7 @@ gallery area end -->
                         <ul id="reservations" style="display: none;">
                             <h3 style="color: #000000; font-weight: bold">Je participe...</h3>
                             <li id="container-fiancailles" style="display: none; white-space: nowrap;">
-                                <label for="response-fiancailles">La soirée de fiançailles</label>
+                                <label for="response-fiancailles">&Agrave; la soirée de fiançailles</label>
                                 <input type="checkbox" id="response-fiancailles" name="fiancailles" value="1" />
                             </li>
                             <li id="container-mairie" style="display: none; overflow: hidden; white-space: nowrap;">

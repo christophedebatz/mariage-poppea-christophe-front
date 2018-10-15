@@ -98,14 +98,19 @@ $(document).ready(function () {
     prependTo: "#mobile_menu"
   });
 
+  let _guests = [];
+  
   $.getJSON('http://localhost:7888/booking.php?userslist', function (guests) {
     let options = $("#guest");
-    guests.forEach(function (guest) {
+    _guests = guests.sort(function (g1, g2) {
+      return g1.fullName.localeCompare(g2.fullName);
+    });
+    _guests.forEach(function (guest) {
       options.append($("<option />").val(guest.userId).text(guest.fullName));
     });
 
     document.getElementById('guest').addEventListener('change', function () {
-      let userId = document.getElementById('guest').value;
+      let userId = parseInt(document.getElementById('guest').value);
       let userName = $('#guest option:selected').text();
       $('#container-fiancailles').hide();
       $('#container-mairie').hide();
@@ -136,6 +141,15 @@ $(document).ready(function () {
         }
       })
         .error(function () {
+          let selectedGuest = null;
+          for (let i = 0; i < _guests.length; i++) {
+            let guest = _guests[i];
+            if (guest.userId === userId) {
+              selectedGuest = guest;
+              break;
+            }
+          }
+
           $('#reservations').show();
           $('#already-resa')
             .html(`Bonjour <strong>${userName}</strong>, tu n'as pas encore répondu aux invitations, nous t'invitons à le faire dès maintenant !`)
@@ -143,9 +157,9 @@ $(document).ready(function () {
           $('#response-eglise').prop('checked', false);
           $('#response-mairie').prop('checked', false);
           $('#response-fiancailles').prop('checked', false);
-          $('#container-fiancailles').hide();
-          $('#container-mairie').show();
-          $('#container-eglise').show();
+          if (selectedGuest.fiancailles) $('#container-fiancailles').show();
+          if (selectedGuest.mairie) $('#container-mairie').show();
+          if (selectedGuest.eglise) $('#container-eglise').show();
         })
         .complete(function () {
           $('#reservations').show();

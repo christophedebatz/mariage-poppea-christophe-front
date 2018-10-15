@@ -103,9 +103,9 @@ else if (isset($_GET['bookUserId']) && !is_null($body)) {
 
     // update or add new reservation according to if reservation already here
     if (is_null($reservation)) {
-        $reservations = addNewReservation($reservations, $newReservation);
+        $reservations = addNewReservation($reservations, $newReservation, $selectedUser);
     } else {
-        $reservations = updateReservation($reservations, $newReservation);
+        $reservations = updateReservation($reservations, $newReservation, $selectedUser);
     }
     
     if (!saveReservations($reservations)) {
@@ -164,14 +164,16 @@ function tryFindGuest ($guests = [], $reservation) {
     return null;
 }
 
-function addNewReservation ($reservations = [], $reservation) {
+function addNewReservation ($reservations = [], $reservation, $guest) {
+    $reservation['fullName'] = $guest->fullName;
     $reservations[] = $reservation;
     return $reservations;
 }
 
-function updateReservation ($reservations = [], $reservation) {
+function updateReservation ($reservations = [], $reservation, $guest) {
     for ($i = 0; $i < count($reservations); $i++) {
         if ($reservations[$i]->userId === $reservation['userId']) {
+            $reservation[$i]['fullName'] = $guest->fullName;
             $reservations[$i] = $reservation;
             return $reservations;
         }
