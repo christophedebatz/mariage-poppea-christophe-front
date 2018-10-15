@@ -64,19 +64,19 @@
             <div class="row">
                 <div class="col-lg-3 col-md-11 col-sm-11 col-10">
                     <div class="logo">
-                        <h1><a href="index.html">P<span><i class="fa fa-heart" aria-hidden="true"></i></span>C</a></h1>
+                        <h1><a href="index.php">P<span><i class="fa fa-heart" aria-hidden="true"></i></span>C</a></h1>
                     </div>
                 </div>
                 <div class="col-lg-9 d-none d-lg-block">
                     <div class="main-menu">
                         <nav id="nav_mobile_menu">
                             <ul class="">
-                                <li><a href="index.html">Accueil</a></li>
-                                <li><a href="index.html#about-us">Nous</a></li>
-                                <li><a href="index.html#story">Moments forts</a></li>
-                                <li><a href="index.html#vip">Nos témoins</a></li>
-                                <li><a href="index.html#info">Info pratiques</a></li>
-                                <li><a href="index.html#rsvp">RSVP</a></li>
+                                <li><a href="index.php">Accueil</a></li>
+                                <li><a href="index.php#about-us">Nous</a></li>
+                                <li><a href="index.php#story">Moments forts</a></li>
+                                <!--<li><a href="index.php#vip">Nos témoins</a></li>-->
+                                <li><a href="index.php#info">Info pratiques</a></li>
+                                <li><a href="index.php#rsvp">RSVP</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -214,7 +214,7 @@
                     <h2>Bienvenue dans notre Monde</h2>
                     <p>Le destin a encore bien joué au bon moment et a ainsi permis une belle rencontre. Celle de Chris
                         et Pop, tous les deux désireux de rencontrer LA bonne personne !</p>
-                    <div class="btn btn2"><a href="index.html#rsvp">RSVP</a></div>
+                    <div class="btn btn2"><a href="index.php#rsvp">RSVP</a></div>
                 </div>
             </div>
         </div>
@@ -318,8 +318,8 @@
         <div class="person-area-menu">
             <div class="person-btn">
                 <ul class="nav nav-tabs d-flex">
-                    <li class="active active-2"><a data-toggle="tab" href="index.html#Groomsman">Groomsman</a></li>
-                    <li><a data-toggle="tab" href="index.html#menu1">Bridemaids</a></li>
+                    <li class="active active-2"><a data-toggle="tab" href="index.php#Groomsman">Groomsman</a></li>
+                    <li><a data-toggle="tab" href="index.php#menu1">Bridemaids</a></li>
                 </ul>
             </div>
             <div class="tab-content">
@@ -332,9 +332,9 @@
                                         <img src="img/person/1.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -350,9 +350,9 @@
                                         <img src="img/person/9.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -368,9 +368,9 @@
                                         <img src="img/person/10.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -386,9 +386,9 @@
                                         <img src="img/person/11.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -404,9 +404,9 @@
                                         <img src="img/person/5.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -422,9 +422,9 @@
                                         <img src="img/person/6.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -440,9 +440,9 @@
                                         <img src="img/person/7.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -458,9 +458,9 @@
                                         <img src="img/person/8.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -482,9 +482,9 @@
                                         <img src="img/person/5.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -500,9 +500,9 @@
                                         <img src="img/person/6.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -518,9 +518,9 @@
                                         <img src="img/person/7.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -536,9 +536,9 @@
                                         <img src="img/person/8.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -554,9 +554,9 @@
                                         <img src="img/person/1.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -572,9 +572,9 @@
                                         <img src="img/person/9.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -590,9 +590,9 @@
                                         <img src="img/person/10.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -608,9 +608,9 @@
                                         <img src="img/person/11.jpg" alt="">
                                         <div class="social-list">
                                             <ul>
-                                                <li><a href="index.html#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.html#"><i class="fa fa-skype"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -803,50 +803,35 @@ gallery area end -->
                 <div class="guest-wrap">
                     <div class="col-12">
                         <div class="section-title2 section-title3 text-center">
-                            <h2>Be Our Guest</h2>
-                            <p>Please reserve before December 15th, 2018.</p>
+                            <h2>On vous attend !</h2>
+                            <p>Merci de répondre avant le 10 Juin 2019.</p>
                         </div>
                     </div>
-                    <div class="contact-form form-style">
-                        <form id="rsvp-form" action="mail.php" class="validate-rsvp-form" method="post">
-                            <div class="row">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" placeholder="Your Name*" id="fname" name="name">
-                                </div>
-                                <div class="col-12  col-sm-6">
-                                    <input type="text" placeholder="Your Email*" id="email" name="email">
-                                </div>
-                                <div class="col col-sm-6">
-                                    <select class="form-control" name="guest">
-                                        <option disabled selected>Number Of Guest*</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                                <div class="col col-sm-6">
-                                    <select class="form-control" name="events">
-                                        <option disabled selected>I Am Attending*</option>
-                                        <option>Al events</option>
-                                        <option>Wedding ceremony</option>
-                                        <option>Reception party</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="contact-textarea" placeholder="Message" name="notes"></textarea>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button id="submit" class="submit">Send Invitation</button>
-                                    <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>
-                                </div>
-                                <div class="col col-md-12 success-error-message">
-                                    <div id="success">Thank you</div>
-                                    <div id="error"> Error occurred while sending email. Please try again later.</div>
-                                </div>
+                    <fieldset class="contact-form form-style" style="margin: 20px; padding-bottom: 20px; padding-left: 15px; padding-right: 15px; border: 1px solid gray;">
+                        <div class="row">
+                            <div class="col col-sm-12 text-center">
+                                <select class="form-control" id="guest">
+                                    <option disabled selected>Je cherche mon nom ici</option>
+                                </select>
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-12" id="already-resa" style="display: none; padding: 20px; color: #000000;"></div>
+                        </div>
+                        <ul id="reservations" style="display: none;">
+                            <h3 style="color: #000000; font-weight: bold">Je participe...</h3>
+                            <li id="container-fiancailles" style="display: none; white-space: nowrap;">
+                                <label for="response-fiancailles">La soirée de fiançailles</label>
+                                <input type="checkbox" id="response-fiancailles" name="fiancailles" value="1" />
+                            </li>
+                            <li id="container-mairie" style="display: none; overflow: hidden; white-space: nowrap;">
+                                <label for="response-mairie">Au cocktail après le mariage à la mairie</label>
+                                <input type="checkbox" id="response-mairie" name="mairie" value="1" />
+                            </li>
+                            <li id="container-eglise" style="display: none; overflow: hidden; white-space: nowrap;">
+                                <label for="response-eglise">Au dîner après la cérémonie à l'église</label>
+                                <input type="checkbox" id="response-eglise" name="eglise" value="1" />
+                            </li>
+                        </ul>
+                    </fieldset>
                 </div>
             </div>
         </div>
@@ -887,7 +872,7 @@ gallery area end -->
 </div>
 <!-- .footer-area start -->
 <!-- scroll up start-->
-<a href="index.html#scrolltop" class="scrollup scrollup2"><i class="fa fa-angle-up"></i></a>
+<a href="index.php#scrolltop" class="scrollup scrollup2"><i class="fa fa-angle-up"></i></a>
 <!-- scroll up end-->
 <!-- all js here -->
 <!-- modernizr-3.5.0.min.js -->

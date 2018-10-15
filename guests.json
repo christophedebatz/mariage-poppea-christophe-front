@@ -1,0 +1,14 @@
+[
+    {
+        "fullName": "Maxime Grau",
+        "isWitness": "true",
+        "hostName": "Christophe de Batz",
+        "invitations": [  "mairie", "eglise" ]
+    },
+    {
+        "fullName": "Romain Bucko",
+        "isWitness": "true",
+        "hostName": "Christophe de Batz",
+        "invitations": [ "fiancailles", "eglise" ]
+    }
+]

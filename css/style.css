@@ -2287,3 +2287,12 @@ h4.comment-title {
 .validate-rsvp-form #error {
   background-color: red;
 }
+
+.contact-form input {
+    height: initial !important;
+    margin-top: 0px !important;
+}
+#reservations label {
+    cursor: pointer !important;
+    font-weight: bold;
+}
