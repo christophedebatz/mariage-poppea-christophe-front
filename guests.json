@@ -170,5 +170,25 @@
               "mairie",
               "eglise"
           ]
-      }
+      },
+      {
+        "fullName": "Poppéa de Raimondi",
+        "hostName": "Poppéa de Raimondi",
+        "isWitness": false,
+        "invitations": [
+            "fiancailles",
+            "mairie",
+            "eglise"
+        ]
+    },
+    {
+        "fullName": "François-Thibault de Raimondi",
+        "hostName": "Poppéa de Raimondi",
+        "isWitness": true,
+        "invitations": [
+            "fiancailles",
+            "mairie",
+            "eglise"
+        ]
+    }
   ]

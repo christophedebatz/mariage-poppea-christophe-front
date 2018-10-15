@@ -2304,3 +2304,18 @@ h4.comment-title {
 .section-title2.section-title3 h2:before {
   filter: grayscale(100%) !important;
 }
+
+.loader{
+    margin: 0 0 2em;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto 1em;
+    vertical-align: top;
+  }
+
+  svg path,
+  svg rect{
+    fill: #FF6700;
+  }

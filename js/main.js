@@ -98,124 +98,135 @@ $(document).ready(function () {
     prependTo: "#mobile_menu"
   });
 
-  let _guests = [];
-  
-  $.getJSON('http://localhost:7888/booking.php?userslist', function (guests) {
-    let options = $("#guest");
-    _guests = guests.sort(function (g1, g2) {
-      return g1.fullName.localeCompare(g2.fullName);
-    });
-    _guests.forEach(function (guest) {
-      options.append($("<option />").val(guest.userId).text(guest.fullName));
-    });
+  $(function () {
+    let _guests = [];
+    
+    $('#loader').show();
 
-    document.getElementById('guest').addEventListener('change', function () {
-      let userId = parseInt(document.getElementById('guest').value);
-      let userName = $('#guest option:selected').text();
-      $('#container-fiancailles').hide();
-      $('#container-mairie').hide();
-      $('#container-eglise').hide();
-
-      $.getJSON(`http://localhost:7888/booking.php?userId=${userId}`, function (book) {
-        if (book.reservation && book.user) {
-          let reservation = book.reservation;
-          $('#response-eglise').prop('checked', reservation.eglise);
-          $('#response-mairie').prop('checked', reservation.mairie);
-          $('#response-fiancailles').prop('checked', reservation.fiancailles);
-          let text = '';
-          if (book.user.fiancailles) {
-            $('#container-fiancailles').show();
-            text += `<li>Soirée de Fiancailles: <strong style="color: #000000;">${reservation.fiancailles ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-          }
-          if (book.user.mairie) {
-            $('#container-mairie').show();
-            text += `<li>Cocktail après mairie: <strong style="color: #000000;">${reservation.mairie ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-          }
-          if (book.user.eglise) {
-            $('#container-eglise').show();
-            text += `<li>Diner après le mariage à l'église: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-          }
-          $('#already-resa')
-            .html(`Bonjour <strong>${userName}</strong>, voici tes réponses actuelles:<ul style="list-style: circle; margin-left: 30px;">${text}</ul>`)
-            .show();
-        }
-      })
-        .error(function () {
-          let selectedGuest = null;
-          for (let i = 0; i < _guests.length; i++) {
-            let guest = _guests[i];
-            if (guest.userId === userId) {
-              selectedGuest = guest;
-              break;
-            }
-          }
-
-          $('#reservations').show();
-          $('#already-resa')
-            .html(`Bonjour <strong>${userName}</strong>, tu n'as pas encore répondu aux invitations, nous t'invitons à le faire dès maintenant !`)
-            .show();
-          $('#response-eglise').prop('checked', false);
-          $('#response-mairie').prop('checked', false);
-          $('#response-fiancailles').prop('checked', false);
-          if (selectedGuest.fiancailles) $('#container-fiancailles').show();
-          if (selectedGuest.mairie) $('#container-mairie').show();
-          if (selectedGuest.eglise) $('#container-eglise').show();
-        })
-        .complete(function () {
-          $('#reservations').show();
-          document.getElementById('response-fiancailles').addEventListener('change', function () {
-            changeListener(userId)
-          });
-          document.getElementById('response-mairie').addEventListener('change', function () {
-            changeListener(userId)
-          });
-          document.getElementById('response-eglise').addEventListener('change', function () {
-            changeListener(userId)
-          });
-
-        });
-    });
-  });
-
-  function changeListener(userId) {
-    let fiancailles = $('#response-fiancailles').prop('checked');
-    let eglise = $('#response-eglise').prop('checked');
-    let mairie = $('#response-mairie').prop('checked');
-    postResponse(userId, fiancailles, mairie, eglise, function (err, data) {
-      if (!err) {
-        $.toast({
-            heading: 'Success',
-            text: 'Réponse enregistrée avec succès !',
-            showHideTransition: 'slide',
-            icon: 'success',
-            position: 'top-right',
-            loaderBg: '#b6d65a'
-        });
-      } else {
-        $.toast({
-          heading: 'Error',
-          text: 'Erreur dans lors de l\'enregistrement de votre réponse. Veuillez réessayer et/ou nous contacter...',
-          showHideTransition: 'slide',
-          icon: 'error',
-          position: 'top-right',
+    $.ajaxSetup({ cache: false });
+    $.getJSON('http://localhost:7888/booking.php?userslist', function (guests) {
+      let options = $("#guest");
+      _guests = guests.sort(function (g1, g2) {
+        return g1.fullName.localeCompare(g2.fullName);
       });
-      }
-    });
-  }
+      $('#loader').hide();
+      _guests.forEach(function (guest) {
+        let fullName = guest.fullName
+        if (guest.vip) {
+          fullName += ' - témoin';
+        }
+        options.append($("<option />").val(guest.userId).text(fullName));
+      });
 
-  function postResponse(userId, fiancailles, mairie, eglise, callback) {
-    $.ajax({
-      type: 'POST',
-      url: `http://localhost:7888/booking.php?bookUserId=${userId}`,
-      data: JSON.stringify({'fiancailles': fiancailles ? 1 : 0, 'mairie': mairie ? 1 : 0, 'eglise': eglise ? 1 : 0}),
-      success: function (data) {
-        callback(false, data);
-      },
-      error: callback,
-      contentType: "application/json; charset=utf-8",
-      dataType: 'json'
+      document.getElementById('guest').addEventListener('change', function () {
+        $('#loader').show();
+        let userId = parseInt(document.getElementById('guest').value);
+        let userName = $('#guest option:selected').text().replace(' - témoin', '');
+        $('#container-fiancailles').hide();
+        $('#container-mairie').hide();
+        $('#container-eglise').hide();
+
+        $.getJSON(`http://localhost:7888/booking.php?userId=${userId}`, function (book) {
+          if (book.reservation && book.user) {
+            let reservation = book.reservation;
+            $('#response-eglise').prop('checked', reservation.eglise);
+            $('#response-mairie').prop('checked', reservation.mairie);
+            $('#response-fiancailles').prop('checked', reservation.fiancailles);
+            let text = '';
+            if (book.user.fiancailles) {
+              $('#container-fiancailles').show();
+              text += `<li>Soirée de Fiancailles: <strong style="color: #000000;">${reservation.fiancailles ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+            }
+            if (book.user.mairie) {
+              $('#container-mairie').show();
+              text += `<li>Cocktail après mairie: <strong style="color: #000000;">${reservation.mairie ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+            }
+            if (book.user.eglise) {
+              $('#container-eglise').show();
+              text += `<li>Diner après le mariage à l'église: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+            }
+            $('#already-resa')
+              .html(`Bonjour <strong>${userName}</strong>, voici tes réponses actuelles:<ul style="list-style: circle; margin-left: 30px;">${text}</ul>`)
+              .show();
+          }
+        })
+          .error(function () {
+            let selectedGuest = null;
+            for (let i = 0; i < _guests.length; i++) {
+              let guest = _guests[i];
+              if (guest.userId === userId) {
+                selectedGuest = guest;
+                break;
+              }
+            }
+            $('#reservations').show();
+            $('#already-resa')
+              .html(`Bonjour <strong>${userName}</strong>, tu n'as pas encore répondu aux invitations, nous t'invitons à le faire dès maintenant !`)
+              .show();
+            $('#response-eglise').prop('checked', false);
+            $('#response-mairie').prop('checked', false);
+            $('#response-fiancailles').prop('checked', false);
+            if (selectedGuest.fiancailles) $('#container-fiancailles').show();
+            if (selectedGuest.mairie) $('#container-mairie').show();
+            if (selectedGuest.eglise) $('#container-eglise').show();
+          })
+          .complete(function () {
+            $('#loader').hide();
+            $('#reservations').show();
+            document.getElementById('response-fiancailles').addEventListener('change', function () {
+              changeListener(userId)
+            });
+            document.getElementById('response-mairie').addEventListener('change', function () {
+              changeListener(userId)
+            });
+            document.getElementById('response-eglise').addEventListener('change', function () {
+              changeListener(userId)
+            });
+
+          });
+      });
     });
-  }
+
+    function changeListener(userId) {
+      let fiancailles = $('#response-fiancailles').prop('checked');
+      let eglise = $('#response-eglise').prop('checked');
+      let mairie = $('#response-mairie').prop('checked');
+      postResponse(userId, fiancailles, mairie, eglise, function (err, data) {
+        if (!err) {
+          $.toast({
+              heading: 'Success',
+              text: 'Réponse enregistrée avec succès !',
+              showHideTransition: 'slide',
+              icon: 'success',
+              position: 'top-right',
+              loaderBg: '#b6d65a'
+          });
+        } else {
+          $.toast({
+            heading: 'Error',
+            text: 'Erreur dans lors de l\'enregistrement de votre réponse. Veuillez réessayer et/ou nous contacter...',
+            showHideTransition: 'slide',
+            icon: 'error',
+            position: 'top-right',
+        });
+        }
+      });
+    }
+
+    function postResponse(userId, fiancailles, mairie, eglise, callback) {
+      $.ajax({
+        type: 'POST',
+        url: `http://localhost:7888/booking.php?bookUserId=${userId}`,
+        data: JSON.stringify({'fiancailles': fiancailles ? 1 : 0, 'mairie': mairie ? 1 : 0, 'eglise': eglise ? 1 : 0}),
+        success: function (data) {
+          callback(false, data);
+        },
+        error: callback,
+        contentType: "application/json; charset=utf-8",
+        dataType: 'json'
+      });
+    }
+  });
 
   /*================================
   slider-area content effect
