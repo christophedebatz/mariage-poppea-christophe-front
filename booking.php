@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 header('Access-Control-Allow-Methods: *');
 header('Access-Control-Allow-Headers: *');
 header('Access-Control-Allow-Origin: *');
@@ -37,6 +38,10 @@ function createGuest ($isVip = false, $hostName = 'Christophe de Batz', $fullNam
 
 $body = file_get_contents("php://input");
 
+if (strtolower($_SERVER['REQUEST_METHOD']) === 'options') {
+  exit();
+}
+
 // at page loading, we display the list of guests
 if (stripos($_SERVER['QUERY_STRING'], 'userslist') !== false) {
     response(loadGuestsList());
@@ -66,15 +71,7 @@ else if (isset($_GET['userId'])) {
 // user wants to update or to make another reservation
 else if (isset($_GET['bookUserId']) && !is_null($body)) {
     $jsonBody = json_decode($body);
-    if (!isset($jsonBody->fiancailles) || !isset($jsonBody->mairie) || !isset($jsonBody->eglise)) {
-        $debug = 'isset($jsonBody->fiancailles)=' . isset($jsonBody->fiancailles);
-        $debug .= '\nis_null($jsonBody->fiancailles)=' . is_null($jsonBody->fiancailles);
-        $debug = '\nisset($jsonBody->mairie)=' . isset($jsonBody->mairie);
-        $debug .= '\nis_null($jsonBody->mairie)=' . is_null($jsonBody->mairie);
-        $debug = '\nisset($jsonBody->eglise)=' . isset($jsonBody->eglise);
-        $debug .= '\nis_null($jsonBody->eglise)=' . is_null($jsonBody->eglise);
-        $debug .= '\n$body=' . $body;
-        response($debug);
+    if (is_null($jsonBody->fiancailles) || is_null($jsonBody->mairie) || is_null($jsonBody->eglise)) {
         response(makeError('invalid.input'), 400);
     }
     $newReservation = [

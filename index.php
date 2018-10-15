@@ -894,14 +894,11 @@ gallery area end -->
 <script src="js/owl-carousel.js"></script>
 <!-- swiper.min.js -->
 <script src="js/swiper.min.js"></script>
-<!-- countdown.js -->
-<script src="js/countdown.js"></script>
 <!-- bootstrap.min.js -->
 <script src="js/bootstrap.min.js"></script>
 <!-- jquery-sticky-menu.js -->
 <script src="js/jquery-sticky-menu.js"></script>
 <!-- jquery-validation.js -->
-<script src="js/validation.js"></script>
 <script src="js/jquery.toast.js"></script>
 
 <!-- main.js -->
