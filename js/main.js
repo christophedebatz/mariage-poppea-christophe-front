@@ -104,7 +104,7 @@ $(document).ready(function () {
     $('#loader').show();
 
     $.ajaxSetup({ cache: false });
-    $.getJSON('http://localhost:7888/booking.php?userslist', function (guests) {
+    $.getJSON('booking.php?userslist', function (guests) {
       let options = $("#guest");
       _guests = guests.sort(function (g1, g2) {
         return g1.fullName.localeCompare(g2.fullName);
@@ -127,7 +127,7 @@ $(document).ready(function () {
         $('#container-eglise').hide();
         $('#container-diner').hide();
 
-        $.getJSON(`http://localhost:7888/booking.php?userId=${userId}`, function (book) {
+        $.getJSON(`booking.php?userId=${userId}`, function (book) {
           if (book.reservation && book.user) {
             let reservation = book.reservation;
             $('#response-eglise').prop('checked', reservation.eglise);
@@ -231,7 +231,7 @@ $(document).ready(function () {
     function postResponse(userId, fiancailles, mairie, eglise, diner, callback) {
       $.ajax({
         type: 'POST',
-        url: `http://localhost:7888/booking.php?bookUserId=${userId}`,
+        url: `booking.php?bookUserId=${userId}`,
         data: JSON.stringify({'fiancailles': fiancailles ? 1 : 0, 'mairie': mairie ? 1 : 0, 'eglise': eglise ? 1 : 0, 'diner': diner ? 1 : 0}),
         success: function (data) {
           callback(false, data);
