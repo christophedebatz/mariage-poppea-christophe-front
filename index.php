@@ -74,9 +74,9 @@
                             <ul class="">
                                 <li><a href="index.php">Accueil</a></li>
                                 <li><a href="index.php#about-us">Nous</a></li>
-                                <li><a href="index.php#story">Moments forts</a></li>
+                                <li><a href="index.php#story">Notre Histoire</a></li>
                                 <!--<li><a href="index.php#vip">Nos témoins</a></li>-->
-                                <li><a href="index.php#info">Info pratiques</a></li>
+                                <li><a href="index.php#info">Où et Quand ?</a></li>
                                 <li><a href="index.php#rsvp">RSVP</a></li>
                             </ul>
                         </nav>
@@ -98,7 +98,7 @@
                 <div class="container">
                     <div class="slider-content2 sd-default-content">
                         <div class="col-lg-12">
-                            <span>NOUS ALLONS NOUS MARIER !</span>
+                            <span>Mariage en vue !</span>
                             <h4>Réservez la date</h4>
                             <p>24 Août 2019 - Alos</p>
                         </div>
@@ -159,9 +159,9 @@
                         <div class="couple-text">
                             <div class="couple-content couple-content2">
                                 <h4>POPP&Eacute;A DE RAIMONDI</h4>
-                                <p>Bonjour, je m'appelle Poppéa (mon diminutif est Pop), j'ai 28 ans et je suis
-                                    directrice d'hôtels à
-                                    Paris.</p>
+                                <p>Moi c’est Pop ! 
+Je pense que "l'on ne va jamais si loin que lorsqu'on ne sait pas ou l’on va".(C.C) 
+Certes; mais lorsque l'on sait avec qui on y va que l'on sait qu'il est possible d'aller très loin. </p>
                             </div>
                             <div class="social-icon">
                                 <ul class="d-flex">
@@ -187,8 +187,7 @@
                         <div class="couple-text">
                             <div class="couple-content couple-content2 couple-content2">
                                 <h4>CHRISTOPHE DE BATZ</h4>
-                                <p>Bonjour, je m'appelle Christophe (mon diminutif sans originalité est Chris), j'ai 28
-                                    ans et je suis ingénieur logiciel à Paris.</p>
+                                <p>Moi c'est Chris ! Je pense que les gens qui utiliseront ce super site pour signaler leur présence (ou leur absence :'( ) sont des gens biens.</p>
                             </div>
                             <div class="social-icon">
                                 <ul class="d-flex">
@@ -213,8 +212,9 @@
             <div class="col-lg-12">
                 <div class="welcome-content welcome-content2">
                     <h2>Bienvenue dans notre Monde</h2>
-                    <p>Le destin a encore bien joué au bon moment et a ainsi permis une belle rencontre. Celle de Chris
-                        et Pop, tous les deux désireux de rencontrer LA bonne personne !</p>
+                    <p>Le destin s’en aie mêlé un mois de février à Paris. 
+Très bavards, de longues conversations s’annonçaient pour nous mener jusque là.
+Entre nous: une grande complicité et beaucoup d’amour.</p>
                     <div class="btn btn2"><a href="index.php#rsvp">RSVP</a></div>
                 </div>
             </div>
@@ -227,7 +227,7 @@
     <div class="container">
         <div class="col-l2">
             <div class="section-title2 text-center">
-                <h2>Moments forts</h2>
+                <h2>Notre histoire</h2>
             </div>
         </div>
         <div class="row">
@@ -252,9 +252,7 @@
                             <div class="story-content ptb--70">
                                 <h2>Notre premier grand voyage</h2>
                                 <span>Septembre 2017</span>
-                                <p>... s'est passé au Costa Rica. Nous avons fait "bus-trip" sur quinze jours avec au
-                                    menu de la rando, de l'accrobranche (tyrolienne la plus longue d'Amérique du Sud),
-                                    de la plage (de rêve) et, Poppéa oblige, de la plongée !</p>
+                                <p>...  s'est passé au Costa Rica peu de temps après notre rencontre (en septembre 2017). Ce fût notre premier grands pas vers la connaissance de l’autre. Nous  avons fait "bus-trip" sur quinze jours avec au menu de la rando, de l'accrobranche (tyrolienne la plus longue d'Amérique du Sud), de la plage (de rêve) et, Poppéa oblige, de la plongée !</p>
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -635,7 +633,7 @@
     <div class="container">
         <div class="col-l2">
             <div class="section-title2 text-center">
-                <h2>Informations pratiques</h2>
+                <h2>Où et Quand ?</h2>
             </div>
         </div>
         <div class="service-area-menu">
@@ -652,7 +650,7 @@
                             <span><strong>Samedi 15 Décembre 2018, à partir de 19h</strong></span>
                             <span>79 rue du Bac</span>
                             <span>75007 Paris</span>
-                            <p>Soirée mélant famille et amis pour célébrer notre engagement.</p>
+                            <p>Amis et famille sont invités à célébrer avec nous notre engagement et à admirer la jolie bague que nous avons choisi ensemble au terme d’une véritable quête dans Paris.</p>
                             <a href="https://www.google.fr/maps/place/79+Rue+du+Bac,+75007+Paris/@48.8545355,2.3220958,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671d5042693ed:0xd7eebb4515a11369!8m2!3d48.8545355!4d2.3242845"
                                target="_blank">Voir sur Google Maps</a>
                         </div>
@@ -668,8 +666,7 @@
                         <span><strong>Date non fixée pour le moment</strong></span>
                         <span>Mairie de Versailles</span>
                         <span>4 Avenue de Paris, 78000 Versailles</span>
-                        <p>Le mariage officiel français suivi d'un cocktail dans la maison des parents de Christophe (46
-                            rue Saint Charles à Versailles).</p>
+                        <p>Cette fois-ci, ça y est ! Retrouvons-nous à la mairie  de Versailles pour le mariage civil puis partageons ensemble un moment de joie le temps d’un cocktail chez Maman et Papa Chris quelques pas (3km) plus loins au 46 rue Saint Charles à Versailles.</p>
                         <a href="https://www.google.fr/maps/place/Mairie/@48.8013096,2.13013,15z/data=!4m2!3m1!1s0x0:0xe30d099ca2a5e986?sa=X&ved=2ahUKEwjbtrOkl4TeAhVGvxoKHStyBYEQ_BIwDXoECAcQCw"
                            target="_blank">Voir sur Google Maps</a>
                     </div>
@@ -693,23 +690,36 @@
                         <h3>Mariage à l'église</h3>
                         <span><strong>Samedi 24 Août 2019</strong></span>
                         <span>Château d'Alos, Route d'Alos, 09200 Alos</span>
-                        <p>Le château se situe à la fin de la route passant par le village d'Alos, au bout.
-                        <ul style="list-style: circle;">
-                            <li><strong>Parking</strong> non</li>
-                            <li><strong>Date limite de réponse</strong> 1er Juin 2019</li>
-                            <li><strong>Y aller</strong>
-                                <div style="padding-left: 20px;">
-                                    <div><strong>Avion</strong> Aéroport de Toulouse (100 km du château).</div>
-                                    <div><strong>Train</strong> Gare SNCF de Saint Girons (12 km du château).</div>
-                                    <div><strong>Voiture</strong> Accéder au château nécessite un véhicule, dans tous
-                                        les cas.
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        </p>
-                        <span>Se rendre au château d'Alos requiert un véhicule. Si vous chercher un moyen de covoiturer, n'hésitez pas à nous demander. Vous pouvez aussi louer une voiture à Toulouse ou autre ou encore utiliser des services comme Drivy.</span>
-                        <a href="https://www.google.fr/maps/place/09200+Alos/@42.9013197,1.0967835,13z/data=!3m1!4b1!4m5!3m4!1s0x12a8c97e93e17751:0x406f69c2f436320!8m2!3d42.908083!4d1.1451"
+                        <p>Rien de tel qu’une petite Église ariégeoise bien cachée dans la montée du village d’Alos pour s’unir devant Dieu et son Eglise.</p>
+                          
+                          <p><strong>Organisation</strong>
+                          <ul style="list-style-type: circle; margin-left: 20px;">
+                            <li>La cérémonie religieuse sera suivie par un cocktail dans les jardins du château.</li>
+                            <li>Pour ceux invités, s'ne suivra un diner servi dans le potager.</li>
+                            <li>Enfin, nous terminerons de manifester notre joie sur la piste de danse.</li>
+                          </ul>
+                          <br>Si vous souhaiter faire un discours, vous pouvez nous demander !
+                          </p>
+                          <p><strong>Comment venir ?</strong><br>
+                          La grande ville la plus proche est Toulouse, mais elle reste loin ! Une voiture est requise pour faire le voyage jusqu'à nous !
+                          Pensez-donc au covoit style Blablacar, au groupe Facebook que nous avons créé avec tous les invités ou encore à louer une voiture à plusieurs, c'est moins cher que l'on croit (happycar.fr, rentalcars.com).
+                            <ul>
+                              <li>En voiture: prendre l’autoroute (80%) puis la nationale (15%) puis les routes de montagnes (5%)</li>
+                              <li>En avion jusqu'à l'aéroport de Toulouse puis en voiture jusqu'à Alos.</li>
+                              <li>En train (4 à 7h selon type de train) jusqu'à la gare de Toulouse, puis TER et bus jusqu'à Saint-Girons. Ensuite les 12 derniers kilomètres en voiture :)</li>
+                            </ul>
+                          </p>
+                          <p><strong>Où se garer une fois là-bas?</strong><br>
+                          Le château ne dispose pas d'assez de places, donc les invités devront se garer aux abords du château... Il faudra se garer serrer pour que tout le monde puisse se garer.
+                          <ul>
+                            <li>A l’entrée du village d’ados avant le panneau Alos (x30)</li>
+                            <li>Sur la place du village (x40)</li>
+                            <li>Au niveau du cimetière vers la route de Seix (x10)</li>
+                            <li>Dans l'allée de gauche château pour les personnes ayant des difficultés à marcher (x10)</li>
+                          </ul>
+                          </p>
+
+<a href="https://www.google.fr/maps/place/09200+Alos/@42.9013197,1.0967835,13z/data=!3m1!4b1!4m5!3m4!1s0x12a8c97e93e17751:0x406f69c2f436320!8m2!3d42.908083!4d1.1451"
                            target="_blank">Voir sur Google Maps</a>
                     </div>
                 </div>

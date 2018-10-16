@@ -80,7 +80,8 @@ else if (isset($_GET['bookUserId']) && !is_null($body)) {
         'fiancailles' => boolval($jsonBody->fiancailles),
         'mairie' => boolval($jsonBody->mairie),
         'eglise' => boolval($jsonBody->eglise),
-        'diner' => boolval($jsonBody->diner)
+        'diner' => boolval($jsonBody->diner),
+        'updatedAt' => time()
     ];
     // checks that selected userId is a real guest
     $guests = loadGuestsList();
@@ -169,6 +170,7 @@ function tryFindGuest ($guests = [], $reservation) {
 
 function addNewReservation ($reservations = [], $reservation, $guest) {
     $reservation['fullName'] = $guest->fullName;
+    $reservation['createdAt'] = time();
     $reservations[] = $reservation;
     return $reservations;
 }
@@ -176,7 +178,8 @@ function addNewReservation ($reservations = [], $reservation, $guest) {
 function updateReservation ($reservations = [], $reservation, $guest) {
     for ($i = 0; $i < count($reservations); $i++) {
         if ($reservations[$i]->userId === $reservation['userId']) {
-            $reservation[$i]['fullName'] = $guest->fullName;
+            $reservation['fullName'] = $guest->fullName;
+            $reservation['updatedAt'] = time();
             $reservations[$i] = $reservation;
             return $reservations;
         }

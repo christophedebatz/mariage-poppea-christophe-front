@@ -15,7 +15,7 @@ if (isset($_POST['fullname'])) {
     'invitations' => $_POST['invitations']
   ];
 }
-  ?>
+?>
 <!doctype html>
 <html lang="fr">
 <head>

@@ -181,17 +181,21 @@ $(document).ready(function () {
           .complete(function () {
             $('#loader').hide();
             $('#reservations').show();
-            document.getElementById('response-fiancailles').addEventListener('change', function () {
-              changeListener(userId)
+            document.getElementById('response-fiancailles').addEventListener('change', function (e) {
+              e.preventDefault();
+              changeListener(userId);
             });
-            document.getElementById('response-mairie').addEventListener('change', function () {
-              changeListener(userId)
+            document.getElementById('response-mairie').addEventListener('change', function (e) {
+              e.preventDefault();
+              changeListener(userId);
             });
-            document.getElementById('response-eglise').addEventListener('change', function () {
-              changeListener(userId)
+            document.getElementById('response-eglise').addEventListener('change', function (e) {
+              e.preventDefault();
+              changeListener(userId);
             });
-            document.getElementById('response-diner').addEventListener('change', function () {
-              changeListener(userId)
+            document.getElementById('response-diner').addEventListener('change', function (e) {
+              e.preventDefault();
+              changeListener(userId);
             });
           });
       });
