@@ -121,11 +121,12 @@ else if (isset($_GET['bookUserId']) && !is_null($body)) {
 
 
 
-
 function saveReservations ($reservations) {
     global $filesPaths;
     if (isset($reservations) && !is_null($reservations)) {
-        return file_put_contents($filesPaths['reservations'], json_encode($reservations)) !== false;
+        if (file_put_contents($filesPaths['reservations'], json_encode($reservations)) === false) {
+            response(error_get_last());
+        }
     }
     return false;
 }
