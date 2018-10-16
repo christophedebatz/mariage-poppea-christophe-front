@@ -32,6 +32,7 @@ function createGuest ($isVip = false, $hostName = 'Christophe de Batz', $fullNam
     $result->fiancailles = in_array('fiancailles', $invitations);
     $result->mairie = in_array('mairie', $invitations);
     $result->eglise = in_array('eglise', $invitations);
+    $result->diner = in_array('diner', $invitations);
     $result->userId = $currentUserId++;
     return $result;
 }
@@ -78,7 +79,8 @@ else if (isset($_GET['bookUserId']) && !is_null($body)) {
         'userId' => intval($_GET['bookUserId']),
         'fiancailles' => boolval($jsonBody->fiancailles),
         'mairie' => boolval($jsonBody->mairie),
-        'eglise' => boolval($jsonBody->eglise)
+        'eglise' => boolval($jsonBody->eglise),
+        'diner' => boolval($jsonBody->diner)
     ];
     // checks that selected userId is a real guest
     $guests = loadGuestsList();
@@ -154,7 +156,8 @@ function tryFindGuest ($guests = [], $reservation) {
         else if ($guest->userId === $reservation['userId']) {
             $guestNotRight = !$guest->mairie && $reservation['mairie'] 
                 || !$guest->fiancailles && $reservation['fiancailles'] 
-                || !$guest->eglise && $reservation['eglise'];
+                || !$guest->eglise && $reservation['eglise']
+                || !$guest->diner && $reservation['diner'];
             if ($guestNotRight) {
                 throw new Exception('not.enough.privileges');
             }

@@ -125,12 +125,14 @@ $(document).ready(function () {
         $('#container-fiancailles').hide();
         $('#container-mairie').hide();
         $('#container-eglise').hide();
+        $('#container-diner').hide();
 
         $.getJSON(`http://localhost:7888/booking.php?userId=${userId}`, function (book) {
           if (book.reservation && book.user) {
             let reservation = book.reservation;
             $('#response-eglise').prop('checked', reservation.eglise);
             $('#response-mairie').prop('checked', reservation.mairie);
+            $('#response-diner').prop('checked', reservation.diner);
             $('#response-fiancailles').prop('checked', reservation.fiancailles);
             let text = '';
             if (book.user.fiancailles) {
@@ -143,7 +145,11 @@ $(document).ready(function () {
             }
             if (book.user.eglise) {
               $('#container-eglise').show();
-              text += `<li>Diner après le mariage à l'église: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+              text += `<li>Cocktail après le mariage à l'église: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+            }
+            if (book.user.diner) {
+              $('#container-diner').show();
+              text += `<li>Diner après le cocktail: <strong style="color: #000000;">${reservation.diner ? 'je participe' : 'je ne participe pas'}</strong></li>`;
             }
             $('#already-resa')
               .html(`Bonjour <strong>${userName}</strong>, voici tes réponses actuelles:<ul style="list-style: circle; margin-left: 30px;">${text}</ul>`)
@@ -163,12 +169,14 @@ $(document).ready(function () {
             $('#already-resa')
               .html(`Bonjour <strong>${userName}</strong>, tu n'as pas encore répondu aux invitations, nous t'invitons à le faire dès maintenant !`)
               .show();
-            $('#response-eglise').prop('checked', false);
-            $('#response-mairie').prop('checked', false);
             $('#response-fiancailles').prop('checked', false);
+            $('#response-mairie').prop('checked', false);
+            $('#response-eglise').prop('checked', false);
+            $('#response-diner').prop('checked', false);
             if (selectedGuest.fiancailles) $('#container-fiancailles').show();
             if (selectedGuest.mairie) $('#container-mairie').show();
             if (selectedGuest.eglise) $('#container-eglise').show();
+            if (selectedGuest.diner) $('#container-diner').show();
           })
           .complete(function () {
             $('#loader').hide();
@@ -182,7 +190,9 @@ $(document).ready(function () {
             document.getElementById('response-eglise').addEventListener('change', function () {
               changeListener(userId)
             });
-
+            document.getElementById('response-diner').addEventListener('change', function () {
+              changeListener(userId)
+            });
           });
       });
     });
@@ -191,7 +201,8 @@ $(document).ready(function () {
       let fiancailles = $('#response-fiancailles').prop('checked');
       let eglise = $('#response-eglise').prop('checked');
       let mairie = $('#response-mairie').prop('checked');
-      postResponse(userId, fiancailles, mairie, eglise, function (err, data) {
+      let diner = $('#response-diner').prop('checked');
+      postResponse(userId, fiancailles, mairie, eglise, diner, function (err, data) {
         if (!err) {
           $.toast({
               heading: 'Success',
@@ -213,11 +224,11 @@ $(document).ready(function () {
       });
     }
 
-    function postResponse(userId, fiancailles, mairie, eglise, callback) {
+    function postResponse(userId, fiancailles, mairie, eglise, diner, callback) {
       $.ajax({
         type: 'POST',
         url: `http://localhost:7888/booking.php?bookUserId=${userId}`,
-        data: JSON.stringify({'fiancailles': fiancailles ? 1 : 0, 'mairie': mairie ? 1 : 0, 'eglise': eglise ? 1 : 0}),
+        data: JSON.stringify({'fiancailles': fiancailles ? 1 : 0, 'mairie': mairie ? 1 : 0, 'eglise': eglise ? 1 : 0, 'diner': diner ? 1 : 0}),
         success: function (data) {
           callback(false, data);
         },

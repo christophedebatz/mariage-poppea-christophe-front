@@ -842,8 +842,12 @@ gallery area end -->
                                 <input type="checkbox" id="response-mairie" name="mairie" value="1" />
                             </li>
                             <li id="container-eglise" style="display: none; overflow: hidden; white-space: nowrap;">
-                                <label for="response-eglise">Au dîner après la cérémonie à l'église</label>
+                                <label for="response-eglise">Au cocktail après l'église</label>
                                 <input type="checkbox" id="response-eglise" name="eglise" value="1" />
+                            </li>
+                            <li id="container-diner" style="display: none; overflow: hidden; white-space: nowrap;">
+                                <label for="response-diner">Au dîner après le cocktail</label>
+                                <input type="checkbox" id="response-diner" name="diner" value="1" />
                             </li>
                         </ul>
                     </fieldset>
