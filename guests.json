@@ -3,13 +3,13 @@
         "fullName": "Maxime Grau",
         "isWitness": "true",
         "hostName": "Christophe de Batz",
-        "invitations": [  "mairie", "eglise", "diner" ]
+        "invitations": [  "mairie", "eglise", "diner", "diner" ]
     },
     {
         "fullName": "Romain Bucko",
         "isWitness": "true",
         "hostName": "Christophe de Batz",
-        "invitations": [ "fiancailles", "eglise" ]
+        "invitations": [ "fiancailles", "eglise", "diner" ]
     },
       {
           "fullName": "Kévin Barberi",
@@ -18,7 +18,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise","diner"
           ]
       },
       {
@@ -28,7 +28,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise","diner"
           ]
       },
       {
@@ -38,7 +38,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise","diner",
+              "diner"
           ]
       },
       {
@@ -48,7 +49,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -58,7 +59,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -68,7 +69,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -78,7 +79,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -88,7 +89,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -98,7 +99,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -108,7 +109,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -118,7 +119,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -128,7 +129,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -138,7 +139,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -148,7 +149,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -158,7 +159,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -168,7 +169,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise"
+              "eglise", "diner"
           ]
       },
       {
@@ -178,7 +179,7 @@
         "invitations": [
             "fiancailles",
             "mairie",
-            "eglise"
+            "eglise", "diner"
         ]
     },
     {
@@ -188,7 +189,7 @@
         "invitations": [
             "fiancailles",
             "mairie",
-            "eglise"
+            "eglise", "diner"
         ]
     }
   ]
