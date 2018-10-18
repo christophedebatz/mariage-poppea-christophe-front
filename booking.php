@@ -100,7 +100,6 @@ else if (isset($_GET['bookUserId']) && !is_null($body)) {
         $reservations = [];
     }
 
-    //response($newReservation['userId']);
     // try to find if reservation already exists
     $reservation = tryFindReservation($reservations, $newReservation['userId']);
 
@@ -108,7 +107,7 @@ else if (isset($_GET['bookUserId']) && !is_null($body)) {
     if (is_null($reservation)) {
         $reservations = addNewReservation($reservations, $newReservation, $selectedUser);
     } else {
-        $reservations = updateReservation($reservations, $newReservation, $selectedUser);
+        $reservations = updateReservation($reservations, $newReservation, $selectedUser);        
     }
     
     if (!saveReservations($reservations)) {
@@ -127,6 +126,7 @@ function saveReservations ($reservations) {
         if (file_put_contents($filesPaths['reservations'], json_encode($reservations)) === false) {
             response(error_get_last());
         }
+        return true;
     }
     return false;
 }

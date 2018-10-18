@@ -832,7 +832,7 @@ gallery area end -->
                             </path>
                         </svg>
                     </div>
-                    <fieldset class="contact-form form-style" style="margin: 20px; padding-bottom: 20px; padding-left: 15px; padding-right: 15px; border: 1px solid gray;">
+                    <fieldset class="contact-form form-style" style="margin: 10px; padding-bottom: 15px; padding-left: 19px; padding-right: 10px; border: 1px solid gray;">
                         <div class="row">
                             <div class="col col-sm-12 text-center">
                                 <select class="form-control" id="guest">
@@ -843,19 +843,19 @@ gallery area end -->
                         </div>
                         <ul id="reservations" style="display: none;">
                             <h3 style="color: #000000; font-weight: bold">Je participe...</h3>
-                            <li id="container-fiancailles" style="display: none; white-space: nowrap;">
-                                <label for="response-fiancailles">&Agrave; la soirée de fiançailles</label>
+                            <li id="container-fiancailles" style="display: none; overflow: scroll-x">
+                                <label for="response-fiancailles">Aux fiançailles</label>
                                 <input type="checkbox" id="response-fiancailles" name="fiancailles" value="1" />
                             </li>
-                            <li id="container-mairie" style="display: none; overflow: hidden; white-space: nowrap;">
-                                <label for="response-mairie">Au cocktail après le mariage à la mairie</label>
+                            <li id="container-mairie" style="display: none; overflow: scroll-x;">
+                                <label for="response-mairie">Au déjeuner après la mairie</label>
                                 <input type="checkbox" id="response-mairie" name="mairie" value="1" />
                             </li>
-                            <li id="container-eglise" style="display: none; overflow: hidden; white-space: nowrap;">
+                            <li id="container-eglise" style="display: none; overflow: scroll-x;">
                                 <label for="response-eglise">Au cocktail après l'église</label>
                                 <input type="checkbox" id="response-eglise" name="eglise" value="1" />
                             </li>
-                            <li id="container-diner" style="display: none; overflow: hidden; white-space: nowrap;">
+                            <li id="container-diner" style="display: none; overflow: scroll-x;">
                                 <label for="response-diner">Au dîner après le cocktail</label>
                                 <input type="checkbox" id="response-diner" name="diner" value="1" />
                             </li>
