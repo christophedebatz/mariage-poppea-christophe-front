@@ -1,15 +1,25 @@
 [
     {
         "fullName": "Maxime Grau",
-        "isWitness": "true",
+        "isWitness": true,
         "hostName": "Christophe de Batz",
-        "invitations": [  "mairie", "eglise", "diner", "diner" ]
+        "invitations": [
+          "fiancailles",
+          "mairie",
+          "eglise",
+          "diner"
+        ]
     },
     {
         "fullName": "Romain Bucko",
-        "isWitness": "true",
+        "isWitness": false,
         "hostName": "Christophe de Batz",
-        "invitations": [ "fiancailles", "eglise", "diner" ]
+        "invitations": [
+          "fiancailles",
+          "mairie",
+          "eglise",
+          "diner"
+        ]
     },
       {
           "fullName": "Kévin Barberi",
@@ -18,7 +28,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise","diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -28,7 +39,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise","diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -38,7 +50,7 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise","diner",
+              "eglise",
               "diner"
           ]
       },
@@ -49,7 +61,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -59,7 +72,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -69,7 +83,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -79,7 +94,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -89,7 +105,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -99,7 +116,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -107,9 +125,9 @@
           "hostName": "Christophe de Batz",
           "isWitness": false,
           "invitations": [
-              "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -117,9 +135,9 @@
           "hostName": "Christophe de Batz",
           "isWitness": false,
           "invitations": [
-              "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -127,9 +145,9 @@
           "hostName": "Christophe de Batz",
           "isWitness": false,
           "invitations": [
-              "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -137,9 +155,9 @@
           "hostName": "Christophe de Batz",
           "isWitness": false,
           "invitations": [
-              "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -149,7 +167,8 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -157,9 +176,9 @@
           "hostName": "Christophe de Batz",
           "isWitness": false,
           "invitations": [
-              "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
       {
@@ -169,19 +188,10 @@
           "invitations": [
               "fiancailles",
               "mairie",
-              "eglise", "diner"
+              "eglise",
+              "diner"
           ]
       },
-      {
-        "fullName": "Poppéa de Raimondi",
-        "hostName": "Poppéa de Raimondi",
-        "isWitness": false,
-        "invitations": [
-            "fiancailles",
-            "mairie",
-            "eglise", "diner"
-        ]
-    },
     {
         "fullName": "François-Thibault de Raimondi",
         "hostName": "Poppéa de Raimondi",
@@ -189,7 +199,119 @@
         "invitations": [
             "fiancailles",
             "mairie",
-            "eglise", "diner"
+            "eglise",
+            "diner"
+        ]
+    },
+    {
+      "fullName": "Frédéric Haury",
+      "hostName": "Christophe de Batz",
+      "isWitness": false,
+      "invitations": [
+          "eglise",
+          "diner"
+      ]
+  },
+  {
+      "fullName": "William Jacquin",
+      "hostName": "Christophe de Batz",
+      "isWitness": false,
+      "invitations": [
+          "fiancailles",
+          "mairie",
+          "eglise",
+          "diner"
+      ]
+  },
+    {
+        "fullName": "Yin-Zhing Lo",
+        "hostName": "Christophe de Batz",
+        "isWitness": false,
+        "invitations": [
+            "mairie",
+            "eglise",
+            "diner"
+        ]
+    },
+    {
+        "fullName": "Kacem Bouhmadi",
+        "hostName": "Christophe de Batz",
+        "isWitness": false,
+        "invitations": [
+            "mairie",
+            "eglise",
+            "diner"
+        ]
+    },
+    {
+        "fullName": "Wai Man Wong",
+        "hostName": "Christophe de Batz",
+        "isWitness": false,
+        "invitations": [
+            "mairie",
+            "eglise",
+            "diner"
+        ]
+    },
+    {
+        "fullName": "Antoine Dupuis",
+        "hostName": "Christophe de Batz",
+        "isWitness": false,
+        "invitations": [
+            "mairie",
+            "eglise",
+            "diner"
+        ]
+    },
+    {
+        "fullName": "Mélanie Segeral",
+        "hostName": "Christophe de Batz",
+        "isWitness": false,
+        "invitations": [
+            "mairie",
+            "eglise",
+            "diner"
+        ]
+    },
+    {
+        "fullName": "Bianca Tusacciu",
+        "hostName": "Christophe de Batz",
+        "isWitness": false,
+        "invitations": [
+            "fiancailles",
+            "mairie",
+            "eglise",
+            "diner"
+        ]
+    },
+    {
+        "fullName": "Ophélie Buchard",
+        "hostName": "Christophe de Batz",
+        "isWitness": false,
+        "invitations": [
+            "fiancailles",
+            "mairie",
+            "eglise",
+            "diner"
+        ]
+    },
+    {
+        "fullName": "Mélanie Lourenço",
+        "hostName": "Christophe de Batz",
+        "isWitness": false,
+        "invitations": [
+            "mairie",
+            "eglise",
+            "diner"
+        ]
+    },
+    {
+        "fullName": "Nadine Dilavarhoussen",
+        "hostName": "Christophe de Batz",
+        "isWitness": false,
+        "invitations": [
+            "eglise",
+            "diner"
         ]
     }
   ]

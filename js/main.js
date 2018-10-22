@@ -100,28 +100,28 @@ $(document).ready(function () {
 
   function writeText (user, reservation) {
     $('#reservations').show();
-    let text = '';
-    if (user.fiancailles) {
-      $('#container-fiancailles').show();
-      text += `<li>Soirée de Fiancailles: <strong style="color: #000000;">${reservation.fiancailles ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-    }
-    if (user.mairie) {
-      $('#container-mairie').show();
-      text += `<li>Cocktail après mairie: <strong style="color: #000000;">${reservation.mairie ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-    }
-    if (user.eglise) {
-      $('#container-eglise').show();
-      text += `<li>Cocktail après le mariage à l'église: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-    }
-    if (user.diner) {
-      $('#container-diner').show();
-      text += `<li>Diner après le cocktail: <strong style="color: #000000;">${reservation.diner ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-    }
     if (!reservation) {
       $('#already-resa')
         .html(`Bonjour <strong>${user.fullName}</strong>, tu n'as pas encore répondu aux invitations, nous t'invitons à le faire dès maintenant !`)
         .show();
     } else {
+      let text = '';
+      if (user.fiancailles) {
+        $('#container-fiancailles').show();
+        text += `<li>Soirée de Fiancailles: <strong style="color: #000000;">${reservation.fiancailles ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+      }
+      if (user.mairie) {
+        $('#container-mairie').show();
+        text += `<li>Cocktail après mairie: <strong style="color: #000000;">${reservation.mairie ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+      }
+      if (user.eglise) {
+        $('#container-eglise').show();
+        text += `<li>Cocktail après le mariage à l'église: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+      }
+      if (user.diner) {
+        $('#container-diner').show();
+        text += `<li>Diner après le cocktail: <strong style="color: #000000;">${reservation.diner ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+      }
       $('#already-resa')
         .html(`Bonjour <strong>${user.fullName}</strong>, voici tes réponses actuelles:<ul style="list-style: circle; margin-left: 30px;">${text}</ul>`)
         .show();
@@ -129,6 +129,7 @@ $(document).ready(function () {
   }
 
   $(function () {
+
     let _guests = [];
     let currentUser = null;
     
@@ -155,12 +156,13 @@ $(document).ready(function () {
         $('#container-fiancailles').hide();
         $('#container-mairie').hide();
         $('#container-eglise').hide();
-        $('#container-diner').hide();
+        $('#container-diner').hide();console.log('--1--');
 
         $.getJSON(`booking.php?userId=${userId}`, function (book) {
           if (book.reservation && book.user) {
             let reservation = book.reservation;
             currentUser = book.user;
+            console.log('currentUser=', currentUser);
             $('#response-eglise').prop('checked', reservation.eglise);
             $('#response-mairie').prop('checked', reservation.mairie);
             $('#response-diner').prop('checked', reservation.diner);
@@ -177,6 +179,7 @@ $(document).ready(function () {
                 break;
               }
             }
+            writeText(selectedGuest, null);
             $('#response-fiancailles').prop('checked', false);
             $('#response-mairie').prop('checked', false);
             $('#response-eglise').prop('checked', false);
@@ -224,6 +227,7 @@ $(document).ready(function () {
               diner
             }
           };
+      console.log('book=', book)
           writeText(book.user, book.reservation);
           $.toast({
               heading: 'Success',

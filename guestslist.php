@@ -12,7 +12,52 @@
     }
   </style>
 </head>
-<body>
+<body onload="javascript: computePricing();">
+<?php
+$content = file_get_contents('./guests.json');
+$guests = json_decode($content);
+
+function hasBeenInvited($invitations, $name) {
+  return in_array($name, $invitations);
+}
+
+echo '<h1>Invités (' . count($guests) . ')</h1>';
+
+if (!$guests || count($guests) === 0) {
+  echo '<div style="margin: 30px; padding: 20px; border: 1px solid black; color: gray; font-weight: bold;">';
+  echo 'Il n\'y a eu aucune invitation pour le moment...';
+  echo '</div>';
+}
+
+echo '<ul style="padding-left: 0px; margin-left: 0px;">';
+
+function getGuestScore($a) {
+  return (hasBeenInvited($a->invitations, 'fiancailles') ? 1 : 0 ) + (hasBeenInvited($a->invitations, 'mairie') ? 1 : 0) + (hasBeenInvited($a->invitations, 'eglise') ? 1 : 0) + (hasBeenInvited($a->invitations, 'diner') ? 1 : 0);
+}
+
+uasort($guests, function ($a, $b) {
+  return getGuestScore($a) < getGuestScore($b) ? 1 : -1;
+});
+
+$i = 1;
+foreach ($guests as $guest) {
+  $color = '#eee';
+  if ($i % 2 === 0) {
+    $color = 'lightgray';
+  }
+  echo '<li style="background-color: ' . $color . '; list-style-type: none; margin: 5px; padding-top: 5px; padding-left: 20px; padding-bottom: 20px; border-radius: 10px;">';
+  echo '<strong style="font-size: 14px;">' . $i . ') ' . $guest->fullName . '</strong> - <strong>' . getGuestScore($guest) . ' evènement(s)</strong> [ ';
+  echo '<strong>Fiançailles:</strong> ' . (hasBeenInvited($guest->invitations, 'fiancailles') ? 'oui' : 'non') . '</strong> | ';
+  echo '<strong>Civil:</strong> ' . (hasBeenInvited($guest->invitations, 'mairie') ? 'oui' : 'non') . '</strong> | ';
+  echo '<strong>Cocktail:</strong> ' . (hasBeenInvited($guest->invitations, 'eglise') ? 'oui' : 'non') . '</strong> | ';
+  echo '<strong>Diner:</strong> ' . (hasBeenInvited($guest->invitations, 'diner') ? 'oui' : 'non') . '</strong>';
+  echo ' ]';
+  $i++;
+}
+echo '</ul>';
+
+?>
+
 <h1>Réponses des invités</h1>
 <hr />
 <?php

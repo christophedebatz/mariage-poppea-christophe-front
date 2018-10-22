@@ -78,6 +78,8 @@
                                 <!--<li><a href="index.php#vip">Nos témoins</a></li>-->
                                 <li><a href="index.php#info">Où et Quand ?</a></li>
                                 <li><a href="index.php#rsvp">RSVP</a></li>
+                                <li><a href="index.php#hotels">Se loger</a></li>
+                                <li><a href="index.php#gifts">Liste de mariage</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -215,7 +217,7 @@ Certes; mais lorsque l'on sait avec qui on y va que l'on sait qu'il est possible
                     <p>Le destin s’en aie mêlé un mois de février à Paris. 
 Très bavards, de longues conversations s’annonçaient pour nous mener jusque là.
 Entre nous: une grande complicité et beaucoup d’amour.</p>
-                    <div class="btn btn2"><a href="index.php#rsvp">RSVP</a></div>
+                    <div class="btn btn2"><a href="index.php#rsvp">Répondez-nous en cliquant ici !</a></div>
                 </div>
             </div>
         </div>
@@ -647,10 +649,10 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                     <div class="col-lg-7">
                         <div class="ceromony-content">
                             <h3>Soirée de fiançailles</h3>
-                            <span><strong>Samedi 15 Décembre 2018, à partir de 19h</strong></span>
+                            <span><strong>Samedi 15 Décembre 2018, à partir de 18h</strong></span>
                             <span>79 rue du Bac</span>
                             <span>75007 Paris</span>
-                            <p>Amis et famille sont invités à célébrer avec nous notre engagement et à admirer la jolie bague que nous avons choisi ensemble au terme d’une véritable quête dans Paris.</p>
+                            <p>Amis et famille sont invités à célébrer avec nous notre engagement et à admirer la jolie bague que nous avons choisi ensemble au terme d’une véritable quête dans Paris. <a href="#rsvp">Vérifiez que vous êtes invités !</a></p>
                             <a href="https://www.google.fr/maps/place/79+Rue+du+Bac,+75007+Paris/@48.8545355,2.3220958,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671d5042693ed:0xd7eebb4515a11369!8m2!3d48.8545355!4d2.3242845"
                                target="_blank">Voir sur Google Maps</a>
                         </div>
@@ -663,10 +665,10 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                 <div class="col-lg-7">
                     <div class="ceromony-content ceromony-content2">
                         <h3>Mariage à la mairie</h3>
-                        <span><strong>Date non fixée pour le moment</strong></span>
+                        <span><strong>Samedi 15 Juin 2019, à 11h40 le matin</strong></span>
                         <span>Mairie de Versailles</span>
                         <span>4 Avenue de Paris, 78000 Versailles</span>
-                        <p>Cette fois-ci, ça y est ! Retrouvons-nous à la mairie  de Versailles pour le mariage civil puis partageons ensemble un moment de joie le temps d’un cocktail chez Maman et Papa Chris quelques pas (3km) plus loins au 46 rue Saint Charles à Versailles.</p>
+                        <p>Cette fois-ci, ça y est ! Retrouvons-nous à la mairie  de Versailles pour le mariage civil puis partageons ensemble un moment de joie le temps d’un cocktail chez Maman et Papa Chris quelques pas (3km) plus loins au 46 rue Saint Charles à Versailles. <a href="#rsvp">Vérifiez que vous êtes invités !</a></p>
                         <a href="https://www.google.fr/maps/place/Mairie/@48.8013096,2.13013,15z/data=!4m2!3m1!1s0x0:0xe30d099ca2a5e986?sa=X&ved=2ahUKEwjbtrOkl4TeAhVGvxoKHStyBYEQ_BIwDXoECAcQCw"
                            target="_blank">Voir sur Google Maps</a>
                     </div>
@@ -690,7 +692,7 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                         <h3>Mariage à l'église</h3>
                         <span><strong>Samedi 24 Août 2019</strong></span>
                         <span>Château d'Alos, Route d'Alos, 09200 Alos</span>
-                        <p>Rien de tel qu’une petite Église ariégeoise bien cachée dans la montée du village d’Alos pour s’unir devant Dieu et son Eglise.</p>
+                        <p>Rien de tel qu’une petite Église ariégeoise bien cachée dans la montée du village d’Alos pour s’unir devant Dieu et son Eglise. <a href="#rsvp">Vérifiez que vous êtes invités !</a></p>
                           
                           <p><strong>Organisation</strong>
                           <ul style="list-style-type: circle; margin-left: 20px;">
@@ -814,8 +816,12 @@ gallery area end -->
                 <div class="guest-wrap">
                     <div class="col-12">
                         <div class="section-title2 section-title3 text-center">
-                            <h2>On vous attend !</h2>
-                            <p>Merci de répondre avant le 10 Juin 2019.</p>
+                            <h2>Répondez-nous !</h2>
+                              <div style="min-height: 50px; padding: 20px;">
+                              <p style="font-weight: bold;">Les réponses ne seront plus prises en compte après le 1<sup>er</sup> Mai 2019 !</p>
+                              <p>Je m'engage à ne seléctionner que mon nom dans la liste</p>
+                              <p>Un problème? &Eacute;crivez-nous à <a href="mailto:love@mariage-poppea-christophe.info">love@popcorn.com</a> !</p>
+                          </div>
                         </div>
                     </div>
                     <div id="loader" class="loader loader--style3" style="display: none;" title="2">
@@ -844,20 +850,22 @@ gallery area end -->
                         <ul id="reservations" style="display: none;">
                             <h3 style="color: #000000; font-weight: bold">Je participe...</h3>
                             <li id="container-fiancailles" style="display: none; overflow: scroll-x">
-                                <label for="response-fiancailles">Aux fiançailles</label>
-                                <input type="checkbox" id="response-fiancailles" name="fiancailles" value="1" />
+                                <label for="response-fiancailles">Aux fiançailles
+                                <input type="checkbox" id="response-fiancailles" name="fiancailles" value="1" /></label>
                             </li>
                             <li id="container-mairie" style="display: none; overflow: scroll-x;">
-                                <label for="response-mairie">Au déjeuner après la mairie</label>
-                                <input type="checkbox" id="response-mairie" name="mairie" value="1" />
+                                <label for="response-mairie">Au déjeuner après la Mairie
+                                <input type="checkbox" id="response-mairie" name="mairie" value="1" /></label>
                             </li>
                             <li id="container-eglise" style="display: none; overflow: scroll-x;">
-                                <label for="response-eglise">Au cocktail après l'église</label>
-                                <input type="checkbox" id="response-eglise" name="eglise" value="1" />
+                                <label for="response-eglise">Au cocktail après l'église
+                                <div style="font-size: 11px; color: black;">Ne pas oublier de nous communiquer votre adresse postale pour l'envoi du faire-part (<a href="mailto: love@mariage-poppea-christophe.info">je donne mon adresse</a>)</div>
+                                <input type="checkbox" id="response-eglise" name="eglise" value="1" /></label>
                             </li>
                             <li id="container-diner" style="display: none; overflow: scroll-x;">
-                                <label for="response-diner">Au dîner après le cocktail</label>
-                                <input type="checkbox" id="response-diner" name="diner" value="1" />
+                                <label for="response-diner">Au dîner après le cocktail
+                                <div style="font-size: 11px; color: black;">Ne pas oublier de nous communiquer votre adresse postale pour l'envoi du faire-part (<a href="mailto: love@mariage-poppea-christophe.info">cje donne mon adresse</a>)</div>
+                                <input type="checkbox" id="response-diner" name="diner" value="1" /></label>
                             </li>
                         </ul>
                     </fieldset>
@@ -866,6 +874,73 @@ gallery area end -->
         </div>
     </div>
 </div>
+<div id="hotels" class="Hotels-area pt--100 pb--30">
+    <div class="container">
+        <div class="col-12">
+            <div class="section-title2 text-center">
+                <h2>Se loger à proximité</h2>
+                <p>Alos c’est un petit coin de verdure où vous trouverez des hotels, maisons d’hôtes et auberges traditionnels/elles, confortables, à des prix abordables et à seulement quelques kilomètres de l’Eglise et du lieu de réception. 
+N’oubliez pas de réserver au plus vite pour être sur d’avoir un pied à terre. 
+</p><p>Pour les plus aventureux, il est possible d'amener sa tente pour camper dans le champ bordant le château !</p>
+              <p style="margin: 20px;">
+                <h3 style="font-size: 23px;">Sur place</h3>
+                <ul>
+                  <li>Champ aux alentours du château<br>
+                  <span style="font-style: italic; color: gray;">Ramener sa tente et le nécessaire</span>
+                </li>
+                <ul>
+              </p>
+              <p style="margin: 20px;">
+                  <h3 style="font-size: 23px;"><a href="https://www.google.fr/maps/place/09140+Seix/@42.8180666,1.0793794,12z/data=!3m1!4b1!4m5!3m4!1s0x12a8b434a0a905e7:0x406f69c2f435240!8m2!3d42.86369!4d1.200625" target="_blank">&Agrave; proximité de Seix</a></h3>
+                  <span style="color: lightgray; font-weight: bold;">20mn - 10kms - Sud</span>
+                  <ul>
+                    <li>Auberge du Haut Salat (~ 50 euros)</li>
+                    <li>Auberge des Deux Rivières (~ 45 euros)</li>
+                  </ul>
+                  </p>
+                  <p style="margin: 20px;">
+                  <h3 style="font-size: 23px;"><a href="https://www.google.fr/maps/place/09200+Saint-Girons/@42.966782,1.125461,13z/data=!3m1!4b1!4m5!3m4!1s0x12a8cc4f3d53afeb:0x406f69c2f4353b0!8m2!3d42.982876!4d1.146088" target="_blank">&Agrave; proximité de Saint-Girons</a></h3>
+                  <span style="color: lightgray; font-weight: bold;">20mn - 12kms - Nord</span>
+                  <ul>
+                    <li>La flamme Rouge (~ 55 euros)</li>
+                    <li>L'enclos des Jacobins (~ 60 euros)</li>
+                    <li>La ferme du Centre (~ 95 euros, pdj inclus)</li>
+                  </ul>
+                  </p>
+                  <p style="margin: 20px;">
+                  <h3 style="font-size: 23px;"><a href="https://www.google.fr/maps/place/09190+Lorp-Sentaraille/@43.0245117,1.0771482,11.49z/data=!4m5!3m4!1s0x12a8d1d96463a3bf:0x406f69c2f435210!8m2!3d43.0190638!4d1.1017334" target="_blank">&Agrave; proximité de Sentaraille</a></h3>
+                  <span style="color: lightgray; font-weight: bold;">30mn - 20kms - Nord</span>
+                  <ul>
+                    <li>Logis Horizon 117 (~ 55 euros)</li>
+                  </ul>
+                  </p>
+                  <div style="min-height: 30px;">&nbsp;</div>
+            </div>
+        </div>
+        <!--<div class="gift-item">-->
+        <!--<div class="Gift-carousel owl-carousel">-->
+        <!--<img src="img/gift/3.png" alt="clinet">-->
+        <!--<img src="img/gift/2.png" alt="clinet">-->
+        <!--<img src="img/gift/3.png" alt="clinet">-->
+        <!--<img src="img/gift/4.png" alt="clinet">-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<div class="welcome-area3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="welcome-content welcome-content2">
+                    <h2>Nous avons hâte de tous vous retrouver !</h2>
+                    <div class="btn btn2"><a href="index.php#rsvp">Répondez-nous en cliquant ici !</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- guest-area end -->
 <!-- Gift Registration start -->
 <div id="gifts" class="Gift-area pt--100 pb--30">
@@ -874,7 +949,13 @@ gallery area end -->
             <div class="section-title2 text-center">
                 <h2>Liste de mariage</h2>
                 <p>Notre liste de cadeaux n'est pas terminée :) Poppéa déborde d'imagination à ce sujet. On vous
-                    préviendra quand on l'aura terminée !</p>
+                    préviendra quand on l'aura terminé !</p>
+
+                    <div style="margin: 30px;">
+                      <div class="btn"><a style="background-color: lightgray; color: black;" href="https://paypal.me/pools/c/88XGb9V7pf" target="_blank">
+                      Cliquez ici pour participer à nos projets !
+                    </a></div>
+                  </div>
             </div>
         </div>
         <!--<div class="gift-item">-->
