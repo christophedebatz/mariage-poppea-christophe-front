@@ -29,8 +29,7 @@ function createGuest ($isVip = false, $hostName = 'Christophe de Batz', $fullNam
     $result->fullName = $fullName;
     $result->hostName = $hostName;
     $result->vip = $isVip;
-    $result->fiancailles = in_array('fiancailles', $invitations);
-    $result->mairie = in_array('mairie', $invitations);
+    $result->brunch = in_array('brunch', $invitations);
     $result->eglise = in_array('eglise', $invitations);
     $result->diner = in_array('diner', $invitations);
     $result->userId = $currentUserId++;
@@ -72,15 +71,15 @@ else if (isset($_GET['userId'])) {
 // user wants to update or to make another reservation
 else if (isset($_GET['bookUserId']) && !is_null($body)) {
     $jsonBody = json_decode($body);
-    if (is_null($jsonBody->fiancailles) || is_null($jsonBody->mairie) || is_null($jsonBody->eglise)) {
+    if (is_null($jsonBody->brunch) || is_null($jsonBody->diner) || is_null($jsonBody->eglise)) {
         response(makeError('invalid.input'), 400);
     }
     $newReservation = [
         'userId' => intval($_GET['bookUserId']),
-        'fiancailles' => boolval($jsonBody->fiancailles),
-        'mairie' => boolval($jsonBody->mairie),
+        'brunch' => boolval($jsonBody->brunch),
         'eglise' => boolval($jsonBody->eglise),
         'diner' => boolval($jsonBody->diner),
+        'address' => trim($jsonBody->address),
         'updatedAt' => time()
     ];
     // checks that selected userId is a real guest
@@ -119,11 +118,10 @@ else if (isset($_GET['bookUserId']) && !is_null($body)) {
 }
 
 
-
 function saveReservations ($reservations) {
     global $filesPaths;
     if (isset($reservations) && !is_null($reservations)) {
-        if (file_put_contents($filesPaths['reservations'], json_encode($reservations)) === false) {
+        if (file_put_contents($filesPaths['reservations'], json_encode($reservations, JSON_PRETTY_PRINT)) === false) {
             response(error_get_last());
         }
         return true;
@@ -156,8 +154,7 @@ function tryFindGuest ($guests = [], $reservation) {
             return $guest;
         }
         else if ($guest->userId === $reservation['userId']) {
-            $guestNotRight = !$guest->mairie && $reservation['mairie'] 
-                || !$guest->fiancailles && $reservation['fiancailles'] 
+            $guestNotRight = !$guest->brunch && $reservation['brunch'] 
                 || !$guest->eglise && $reservation['eglise']
                 || !$guest->diner && $reservation['diner'];
             if ($guestNotRight) {

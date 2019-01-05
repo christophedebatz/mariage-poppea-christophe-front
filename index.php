@@ -838,12 +838,20 @@ gallery area end -->
                         <ul id="reservations" style="display: none;">
                             <h3 style="color: #000000; font-weight: bold">Je participe...</h3>
                             <li id="container-eglise" style="display: none; overflow: hidden; white-space: nowrap;">
-                                <label for="response-eglise">Au cocktail après l'église</label>
-                                <input type="checkbox" id="response-eglise" name="eglise" value="1" />
+                                <label for="response-eglise">A l'Eglise puis au cocktail à 16h</label>
+                                <input style="cursor: pointer;" type="checkbox" id="response-eglise" name="eglise" value="1" />
                             </li>
                             <li id="container-diner" style="display: none; overflow: hidden; white-space: nowrap;">
-                                <label for="response-diner">Au dîner après le cocktail</label>
-                                <input type="checkbox" id="response-diner" name="diner" value="1" />
+                                <label for="response-diner">Au dîner après le cocktail à 20h</label>
+                                <input style="cursor: pointer;" type="checkbox" id="response-diner" name="diner" value="1" />
+                            </li>
+                            <li id="container-brunch" style="display: none; overflow: hidden; white-space: nowrap;">
+                                <label for="response-brunch">Au brunch le dimanche à 11h</label>
+                                <input style="cursor: pointer;" type="checkbox" id="response-brunch" name="brunch" value="1" />
+                            </li>
+                            <li id="container-address" style="overflow: hidden; white-space: nowrap;">
+                                <label for="address">Mon adresse:</label>
+                                <input style="font-size: 15px; !important" type="text" name="address" id="address" placeholder="Mon adresse postale (faire-part)">
                             </li>
                         </ul>
                     </fieldset>
