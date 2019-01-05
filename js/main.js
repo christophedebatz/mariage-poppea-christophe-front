@@ -106,14 +106,6 @@ $(document).ready(function () {
         .show();
     } else {
       let text = '';
-      if (user.fiancailles) {
-        $('#container-fiancailles').show();
-        text += `<li>Soirée de Fiancailles: <strong style="color: #000000;">${reservation.fiancailles ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-      }
-      if (user.mairie) {
-        $('#container-mairie').show();
-        text += `<li>Cocktail après mairie: <strong style="color: #000000;">${reservation.mairie ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-      }
       if (user.eglise) {
         $('#container-eglise').show();
         text += `<li>Cocktail après le mariage à l'église: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
@@ -192,14 +184,6 @@ $(document).ready(function () {
           .complete(function () {
             $('#loader').hide();
             $('#reservations').show();
-            document.getElementById('response-fiancailles').addEventListener('change', function (e) {
-              e.preventDefault();
-              changeListener(userId);
-            });
-            document.getElementById('response-mairie').addEventListener('change', function (e) {
-              e.preventDefault();
-              changeListener(userId);
-            });
             document.getElementById('response-eglise').addEventListener('change', function (e) {
               e.preventDefault();
               changeListener(userId);
@@ -227,7 +211,7 @@ $(document).ready(function () {
               diner
             }
           };
-      console.log('book=', book)
+          console.log('book=', book)
           writeText(book.user, book.reservation);
           $.toast({
               heading: 'Success',

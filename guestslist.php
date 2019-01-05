@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Add guest</title>
+  <title>Guests list</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <style>
@@ -11,6 +11,16 @@
       font-family: 'Source Code Pro', serif;
     }
   </style>
+  <script type="text/javascript">
+    function show(id) {
+      let el = document.getElementById(id);
+      if (el.style.display === 'none') {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    }
+  </script>
 </head>
 <body onload="javascript: computePricing();">
 <?php
@@ -21,7 +31,18 @@ function hasBeenInvited($invitations, $name) {
   return in_array($name, $invitations);
 }
 
+function countBy($hostName, $guests = []) {
+  $count = 0;
+  $guestsLength = count($guests);
+  for ($i = 0; $i < $guestsLength; $i++) {
+    if ($guests[$i]->hostName == $hostName) {
+      $count++;
+    }
+  }
+  return $count;
+}
 echo '<h1>Invités (' . count($guests) . ')</h1>';
+echo '<hr>';
 
 if (!$guests || count($guests) === 0) {
   echo '<div style="margin: 30px; padding: 20px; border: 1px solid black; color: gray; font-weight: bold;">';
@@ -29,26 +50,48 @@ if (!$guests || count($guests) === 0) {
   echo '</div>';
 }
 
-echo '<ul style="padding-left: 0px; margin-left: 0px;">';
-
 function getGuestScore($a) {
-  return (hasBeenInvited($a->invitations, 'fiancailles') ? 1 : 0 ) + (hasBeenInvited($a->invitations, 'mairie') ? 1 : 0) + (hasBeenInvited($a->invitations, 'eglise') ? 1 : 0) + (hasBeenInvited($a->invitations, 'diner') ? 1 : 0);
+  return (hasBeenInvited($a->invitations, 'eglise') ? 1 : 0) 
+  + (hasBeenInvited($a->invitations, 'diner') ? 1 : 0);
 }
 
 uasort($guests, function ($a, $b) {
   return getGuestScore($a) < getGuestScore($b) ? 1 : -1;
 });
 
+$chrisGuests = array_filter($guests, function ($guest) {
+  return $guest->hostName == 'Christophe de Batz' ? $guest : null;
+});
+
+$poppeaGuests = array_filter($guests, function ($guest) {
+  return $guest->hostName == 'Poppéa de Raimondi' ? $guest : null;
+});
+
+echo '<h2><a href="#" onclick="javascript:show(\'christophe\');">Invités de Christophe</a> (' . countBy('Christophe de Batz', $guests) . ')</h2>';
+echo '<ul style="padding-left: 0px; display: none; margin-left: 0px;" id="christophe">';
 $i = 1;
-foreach ($guests as $guest) {
+foreach ($chrisGuests as $guest) {
   $color = '#eee';
   if ($i % 2 === 0) {
     $color = 'lightgray';
   }
   echo '<li style="background-color: ' . $color . '; list-style-type: none; margin: 5px; padding-top: 5px; padding-left: 20px; padding-bottom: 20px; border-radius: 10px;">';
   echo '<strong style="font-size: 14px;">' . $i . ') ' . $guest->fullName . '</strong> - <strong>' . getGuestScore($guest) . ' evènement(s)</strong> [ ';
-  echo '<strong>Fiançailles:</strong> ' . (hasBeenInvited($guest->invitations, 'fiancailles') ? 'oui' : 'non') . '</strong> | ';
-  echo '<strong>Civil:</strong> ' . (hasBeenInvited($guest->invitations, 'mairie') ? 'oui' : 'non') . '</strong> | ';
+  echo '<strong>Cocktail:</strong> ' . (hasBeenInvited($guest->invitations, 'eglise') ? 'oui' : 'non') . '</strong> | ';
+  echo '<strong>Diner:</strong> ' . (hasBeenInvited($guest->invitations, 'diner') ? 'oui' : 'non') . '</strong>';
+  echo ' ]';
+  $i++;
+}
+echo '</ul>';
+echo '<h2><a href="#" onclick="javascript:show(\'poppea\');">Invités de Poppéa</a> (' . countBy('Poppéa de Raimondi', $guests) . ')</h2>';
+echo '<ul style="padding-left: 0px; display: none; margin-left: 0px;" id="poppea">';
+foreach ($poppeaGuests as $guest) {
+  $color = '#eee';
+  if ($i % 2 === 0) {
+    $color = 'lightgray';
+  }
+  echo '<li style="background-color: ' . $color . '; list-style-type: none; margin: 5px; padding-top: 5px; padding-left: 20px; padding-bottom: 20px; border-radius: 10px;">';
+  echo '<strong style="font-size: 14px;">' . $i . ') ' . $guest->fullName . '</strong> - <strong>' . getGuestScore($guest) . ' evènement(s)</strong> [ ';
   echo '<strong>Cocktail:</strong> ' . (hasBeenInvited($guest->invitations, 'eglise') ? 'oui' : 'non') . '</strong> | ';
   echo '<strong>Diner:</strong> ' . (hasBeenInvited($guest->invitations, 'diner') ? 'oui' : 'non') . '</strong>';
   echo ' ]';
@@ -59,7 +102,7 @@ echo '</ul>';
 ?>
 
 <h1>Réponses des invités</h1>
-<hr />
+<hr>
 <?php
 $content = file_get_contents('./reservations.json');
 $reservations = json_decode($content);
@@ -93,8 +136,6 @@ foreach ($reservations as $reservation) {
   echo '<li style="background-color: ' . $color . '; list-style-type: none; margin: 5px; padding-top: 5px; padding-left: 20px; padding-bottom: 20px; border-radius: 10px;">';
   echo '<h3>' . $reservation->fullName . '</h3>';
   echo '<ul>';
-  echo '<li><strong>Fiançailles:</strong> ' . isParticipating($reservation->fiancailles) . '</li>';
-  echo '<li><strong>Civil:</strong> ' . isParticipating($reservation->mairie) . '</strong></li>';
   echo '<li><strong>Cocktail:</strong> ' . isParticipating($reservation->eglise) . '</strong></li>';
   echo '<li><strong>Diner:</strong> ' . isParticipating($reservation->diner) . '</strong></li>';
   echo '<ul style="color: gray; padding: 10px; padding-left: 30px;">';
@@ -126,8 +167,9 @@ echo '</ul>';
   }
 </script>
 
+<h1>Simulation de budget ( <?php echo $i; ?> réponse(s) )</h1>
+<hr>
 <fieldset style="border: 1px solid lightgray; border-radius: 10px;">
-  <legend>Simulation de budget ( <?php echo $i; ?> réponse(s) )</legend>
   <ul>
     <li>Prix tente: <input type="text" id="price-tent" value="4000" size="4"></li>
     <li>Prix musique: <input type="text" id="price-music" value="800" size="4"></li>

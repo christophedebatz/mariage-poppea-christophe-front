@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96"/>
     <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png" sizes="32x32"/>
     <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png" sizes="16x16"/>
-    <link rel="icon" type="image/png" href="./img/favicons/favicon-128.png" sizes="128x128"/>
+    <link rel="icon" type="image/png" href="./img/favicons/favico   n-128.png" sizes="128x128"/>
     <meta name="msapplication-TileColor" content="#FFFFFF"/>
     <meta name="msapplication-TileImage" content="./img/favicons/mstile-144x144.png"/>
     <meta name="msapplication-square70x70logo" content="./img/favicons/mstile-70x70.png"/>
@@ -646,17 +646,6 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                             <img src="img/service/1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="ceromony-content">
-                            <h3>Soirée de fiançailles</h3>
-                            <span><strong>Samedi 15 Décembre 2018, à partir de 18h</strong></span>
-                            <span>79 rue du Bac</span>
-                            <span>75007 Paris</span>
-                            <p>Amis et famille sont invités à célébrer avec nous notre engagement et à admirer la jolie bague que nous avons choisi ensemble au terme d’une véritable quête dans Paris. <a href="#rsvp">Vérifiez que vous êtes invités !</a></p>
-                            <a href="https://www.google.fr/maps/place/79+Rue+du+Bac,+75007+Paris/@48.8545355,2.3220958,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671d5042693ed:0xd7eebb4515a11369!8m2!3d48.8545355!4d2.3242845"
-                               target="_blank">Voir sur Google Maps</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -665,11 +654,11 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                 <div class="col-lg-7">
                     <div class="ceromony-content ceromony-content2">
                         <h3>Mariage à la mairie</h3>
-                        <span><strong>Samedi 15 Juin 2019, à 11h40 le matin</strong></span>
-                        <span>Mairie de Versailles</span>
-                        <span>4 Avenue de Paris, 78000 Versailles</span>
-                        <p>Cette fois-ci, ça y est ! Retrouvons-nous à la mairie  de Versailles pour le mariage civil puis partageons ensemble un moment de joie le temps d’un cocktail chez Maman et Papa Chris quelques pas (3km) plus loins au 46 rue Saint Charles à Versailles. <a href="#rsvp">Vérifiez que vous êtes invités !</a></p>
-                        <a href="https://www.google.fr/maps/place/Mairie/@48.8013096,2.13013,15z/data=!4m2!3m1!1s0x0:0xe30d099ca2a5e986?sa=X&ved=2ahUKEwjbtrOkl4TeAhVGvxoKHStyBYEQ_BIwDXoECAcQCw"
+                        <span><strong>Samedi 24 Août 2019, à 11h le matin</strong></span>
+                        <span>Mairie d'Alos</span>
+                        <span>Quartier d'Alos</span>
+                        <p>Cette fois-ci, ça y est ! Retrouvons-nous à mairie d'Alos pour le mariage civil le matin du 24 août 2019. La cérémonie sera courte et s'adresse notamment à la famille proche.<a href="#rsvp">Vérifiez que vous êtes invités !</a></p>
+                        <a href="https://www.google.fr/maps/place/09200+Alos/@42.9013197,1.0967835,13z/data=!3m1!4b1!4m5!3m4!1s0x12a8c97e93e17751:0x406f69c2f436320!8m2!3d42.908083!4d1.1451"
                            target="_blank">Voir sur Google Maps</a>
                     </div>
                 </div>
@@ -720,7 +709,6 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                             <li>Dans l'allée de gauche château pour les personnes ayant des difficultés à marcher (x10)</li>
                           </ul>
                           </p>
-
 <a href="https://www.google.fr/maps/place/09200+Alos/@42.9013197,1.0967835,13z/data=!3m1!4b1!4m5!3m4!1s0x12a8c97e93e17751:0x406f69c2f436320!8m2!3d42.908083!4d1.1451"
                            target="_blank">Voir sur Google Maps</a>
                     </div>
@@ -849,23 +837,13 @@ gallery area end -->
                         </div>
                         <ul id="reservations" style="display: none;">
                             <h3 style="color: #000000; font-weight: bold">Je participe...</h3>
-                            <li id="container-fiancailles" style="display: none; overflow: scroll-x">
-                                <label for="response-fiancailles">Aux fiançailles
-                                <input type="checkbox" id="response-fiancailles" name="fiancailles" value="1" /></label>
+                            <li id="container-eglise" style="display: none; overflow: hidden; white-space: nowrap;">
+                                <label for="response-eglise">Au cocktail après l'église</label>
+                                <input type="checkbox" id="response-eglise" name="eglise" value="1" />
                             </li>
-                            <li id="container-mairie" style="display: none; overflow: scroll-x;">
-                                <label for="response-mairie">Au déjeuner après la Mairie
-                                <input type="checkbox" id="response-mairie" name="mairie" value="1" /></label>
-                            </li>
-                            <li id="container-eglise" style="display: none; overflow: scroll-x;">
-                                <label for="response-eglise">Au cocktail après l'église
-                                <div style="font-size: 11px; color: black;">Ne pas oublier de nous communiquer votre adresse postale pour l'envoi du faire-part (<a href="mailto: love@mariage-poppea-christophe.info">je donne mon adresse</a>)</div>
-                                <input type="checkbox" id="response-eglise" name="eglise" value="1" /></label>
-                            </li>
-                            <li id="container-diner" style="display: none; overflow: scroll-x;">
-                                <label for="response-diner">Au dîner après le cocktail
-                                <div style="font-size: 11px; color: black;">Ne pas oublier de nous communiquer votre adresse postale pour l'envoi du faire-part (<a href="mailto: love@mariage-poppea-christophe.info">cje donne mon adresse</a>)</div>
-                                <input type="checkbox" id="response-diner" name="diner" value="1" /></label>
+                            <li id="container-diner" style="display: none; overflow: hidden; white-space: nowrap;">
+                                <label for="response-diner">Au dîner après le cocktail</label>
+                                <input type="checkbox" id="response-diner" name="diner" value="1" />
                             </li>
                         </ul>
                     </fieldset>
@@ -940,6 +918,7 @@ N’oubliez pas de réserver au plus vite pour être sur d’avoir un pied à te
         </div>
     </div>
 </div>
+
 
 <!-- guest-area end -->
 <!-- Gift Registration start -->

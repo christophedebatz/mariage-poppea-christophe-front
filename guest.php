@@ -84,8 +84,6 @@ if (isset($_POST['fullname'])) {
       </p>
 
       <p>
-        <label><input type="checkbox" checked="true" name="invitations[]" value="fiancailles"> Fiançailles</label>
-        <label><input type="checkbox" checked="true" name="invitations[]" value="mairie"> Mairie</label>
         <label><input type="checkbox" checked="true" name="invitations[]" value="eglise"> Eglise & coktail</label>
         <label><input type="checkbox" checked="true" name="invitations[]" value="diner"> Diner</label>
       </p>
