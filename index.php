@@ -948,9 +948,13 @@ N’oubliez pas de réserver au plus vite pour être sur d’avoir un pied à te
         <div class="col-12">
             <div class="section-title2 text-center">
                 <h2>Liste de mariage</h2>
-                <p>Notre liste de cadeaux n'est pas terminée :) Poppéa déborde d'imagination à ce sujet. On vous
-                    préviendra quand on l'aura terminé !</p>
-
+                    <div style="margin: 30px;">
+                      <div class="btn">
+                        <a href="http://www.millemercismariage.com/poppea-christophe/mariage-de-christophe-de+batz-et-poppea-de+raimondi.html" target="_blank">
+                            <img src="img/view-list.png" alt="Voir la liste de mariage">
+                        </a>
+                       </div>
+                    </div>
                     <div style="margin: 30px;">
                       <div class="btn"><a style="background-color: lightgray; color: black;" href="https://paypal.me/pools/c/88XGb9V7pf" target="_blank">
                       Cliquez ici pour participer à nos projets !
@@ -958,14 +962,6 @@ N’oubliez pas de réserver au plus vite pour être sur d’avoir un pied à te
                   </div>
             </div>
         </div>
-        <!--<div class="gift-item">-->
-        <!--<div class="Gift-carousel owl-carousel">-->
-        <!--<img src="img/gift/3.png" alt="clinet">-->
-        <!--<img src="img/gift/2.png" alt="clinet">-->
-        <!--<img src="img/gift/3.png" alt="clinet">-->
-        <!--<img src="img/gift/4.png" alt="clinet">-->
-        <!--</div>-->
-        <!--</div>-->
     </div>
 </div>
 <!-- Gift Registration end -->
