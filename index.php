@@ -72,14 +72,13 @@
                     <div class="main-menu">
                         <nav id="nav_mobile_menu">
                             <ul class="">
-                                <li><a href="index.php">Accueil</a></li>
-                                <li><a href="index.php#about-us">Nous</a></li>
-                                <li><a href="index.php#story">Notre Histoire</a></li>
-                                <!--<li><a href="index.php#vip">Nos témoins</a></li>-->
-                                <li><a href="index.php#info">Où et Quand ?</a></li>
-                                <li><a href="index.php#rsvp">RSVP</a></li>
-                                <li><a href="index.php#hotels">Se loger</a></li>
-                                <li><a href="index.php#gifts">Liste de mariage</a></li>
+                                <li><a href="index.php#about-us">NOUS</a></li>
+                                <li><a href="index.php#story">NOTRE HISTOIRE</a></li>
+                                <li><a href="index.php#info">INFOS</a></li>
+                                <!-- <li><a href="index.php#rsvp">RSVP</a></li> -->
+                                <li><a href="index.php#hotels">LOGEMENTS</a></li>
+                                <!-- <li><a href="index.php#activities">SUR PLACE</a></li> -->
+                                <li><a href="index.php#gifts">LISTE DE MARIAGE</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -162,8 +161,8 @@
                             <div class="couple-content couple-content2">
                                 <h4>POPP&Eacute;A DE RAIMONDI</h4>
                                 <p>Moi c’est Pop ! 
-Je pense que "l'on ne va jamais si loin que lorsqu'on ne sait pas ou l’on va".(C.C) 
-Certes; mais lorsque l'on sait avec qui on y va que l'on sait qu'il est possible d'aller très loin. </p>
+Je pense que "l'on ne va jamais si loin que lorsqu'on ne sait pas où l’on va".(C.C)
+Certes; mais lorsque l'on sait avec qui on y va, on sait qu'il est possible d'aller très loin. </p>
                             </div>
                             <div class="social-icon">
                                 <ul class="d-flex">
@@ -189,7 +188,7 @@ Certes; mais lorsque l'on sait avec qui on y va que l'on sait qu'il est possible
                         <div class="couple-text">
                             <div class="couple-content couple-content2 couple-content2">
                                 <h4>CHRISTOPHE DE BATZ</h4>
-                                <p>Moi c'est Chris ! Je pense que les gens qui utiliseront ce super site pour signaler leur présence (ou leur absence :'( ) sont des gens biens.</p>
+                                <p>Moi c'est Chris ! Je pense que les gens qui utiliseront ce super site pour s'informer sur notre mariage sont des gens biens.</p>
                             </div>
                             <div class="social-icon">
                                 <ul class="d-flex">
@@ -214,10 +213,10 @@ Certes; mais lorsque l'on sait avec qui on y va que l'on sait qu'il est possible
             <div class="col-lg-12">
                 <div class="welcome-content welcome-content2">
                     <h2>Bienvenue dans notre Monde</h2>
-                    <p>Le destin s’en aie mêlé un mois de février à Paris. 
+                    <p>Le destin s’en est mêlé un mois de février à Paris.
 Très bavards, de longues conversations s’annonçaient pour nous mener jusque là.
 Entre nous: une grande complicité et beaucoup d’amour.</p>
-                    <div class="btn btn2"><a href="index.php#rsvp">Répondez-nous en cliquant ici !</a></div>
+                    <!-- <div class="btn btn2"><a href="index.php#rsvp">Répondez-nous en cliquant ici !</a></div> -->
                 </div>
             </div>
         </div>
@@ -254,7 +253,7 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                             <div class="story-content ptb--70">
                                 <h2>Notre premier grand voyage</h2>
                                 <span>Septembre 2017</span>
-                                <p>...  s'est passé au Costa Rica peu de temps après notre rencontre (en septembre 2017). Ce fût notre premier grands pas vers la connaissance de l’autre. Nous  avons fait "bus-trip" sur quinze jours avec au menu de la rando, de l'accrobranche (tyrolienne la plus longue d'Amérique du Sud), de la plage (de rêve) et, Poppéa oblige, de la plongée !</p>
+                                <p>...  s'est passé au Costa Rica peu de temps après notre rencontre (en septembre 2017). Ce fût notre premier grand pas vers la connaissance de l’autre. Nous  avons fait un "bus-trip" sur quinze jours avec au menu de la rando, de l'accrobranche (tyrolienne la plus longue d'Amérique du Sud), de la plage (de rêve) et, Poppéa oblige, de la plongée !</p>
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -308,328 +307,6 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
     </div>
 </div>
 <!-- story area end -->
-<!-- person-area start
-<div id="people" class="person-area person-area2 pt--100 pb--70">
-    <div class="container">
-        <div class="col-l2">
-            <div class="section-title2 text-center">
-                <h2>Important Persons</h2>
-            </div>
-        </div>
-        <div class="person-area-menu">
-            <div class="person-btn">
-                <ul class="nav nav-tabs d-flex">
-                    <li class="active active-2"><a data-toggle="tab" href="index.php#Groomsman">Groomsman</a></li>
-                    <li><a data-toggle="tab" href="index.php#menu1">Bridemaids</a></li>
-                </ul>
-            </div>
-            <div class="tab-content">
-                <div id="Groomsman" class="tab-pane fade show active">
-                    <div class="Groomsman-wrap">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/1.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Mr Abraham</h3>
-                                        <span>Best Friend</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/9.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Rohan Mithy</h3>
-                                        <span>Brother</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/10.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Lily Brown</h3>
-                                        <span>Sister</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/11.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>John Roky</h3>
-                                        <span>Best Friend</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/5.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Mr Abraham</h3>
-                                        <span>Best Friend</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/6.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Rohan Mithy</h3>
-                                        <span>Brother</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/7.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Lily Brown</h3>
-                                        <span>Sister</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/8.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>John Roky</h3>
-                                        <span>Best Friend</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                    <div class="Ceremony-wrap">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/5.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Mr Abraham</h3>
-                                        <span>Best Friend</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/6.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Rohan Mithy</h3>
-                                        <span>Brother</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/7.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Lily Brown</h3>
-                                        <span>Sister</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/8.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>John Roky</h3>
-                                        <span>Best Friend</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/1.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Mr Abraham</h3>
-                                        <span>Best Friend</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/9.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Rohan Mithy</h3>
-                                        <span>Brother</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/10.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>Lily Brown</h3>
-                                        <span>Sister</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="person-wrap">
-                                    <div class="person-img">
-                                        <img src="img/person/11.jpg" alt="">
-                                        <div class="social-list">
-                                            <ul>
-                                                <li><a href="index.php#"><i class="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="index.php#"><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="person-content">
-                                        <h3>John Roky</h3>
-                                        <span>Best Friend</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
-<!-- service-area end -->
 <!-- service-area start -->
 <div id="info" class="service-area service-area2 ptb--100">
     <div class="container">
@@ -638,38 +315,16 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                 <h2>Où et Quand ?</h2>
             </div>
         </div>
-        <div class="service-area-menu">
-            <div class="Ceremony-wrap">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="ceromony-img">
-                            <img src="img/service/1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="ceromony-content">
-                            <h3>Soirée de fiançailles</h3>
-                            <span><strong>Samedi 15 Décembre 2018, à partir de 18h</strong></span>
-                            <span>79 rue du Bac</span>
-                            <span>75007 Paris</span>
-                            <p>Amis et famille sont invités à célébrer avec nous notre engagement et à admirer la jolie bague que nous avons choisi ensemble au terme d’une véritable quête dans Paris. <a href="#rsvp">Vérifiez que vous êtes invités !</a></p>
-                            <a href="https://www.google.fr/maps/place/79+Rue+du+Bac,+75007+Paris/@48.8545355,2.3220958,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671d5042693ed:0xd7eebb4515a11369!8m2!3d48.8545355!4d2.3242845"
-                               target="_blank">Voir sur Google Maps</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="Ceremony-wrap">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="ceromony-content ceromony-content2">
                         <h3>Mariage à la mairie</h3>
-                        <span><strong>Samedi 15 Juin 2019, à 11h40 le matin</strong></span>
-                        <span>Mairie de Versailles</span>
-                        <span>4 Avenue de Paris, 78000 Versailles</span>
-                        <p>Cette fois-ci, ça y est ! Retrouvons-nous à la mairie  de Versailles pour le mariage civil puis partageons ensemble un moment de joie le temps d’un cocktail chez Maman et Papa Chris quelques pas (3km) plus loins au 46 rue Saint Charles à Versailles. <a href="#rsvp">Vérifiez que vous êtes invités !</a></p>
-                        <a href="https://www.google.fr/maps/place/Mairie/@48.8013096,2.13013,15z/data=!4m2!3m1!1s0x0:0xe30d099ca2a5e986?sa=X&ved=2ahUKEwjbtrOkl4TeAhVGvxoKHStyBYEQ_BIwDXoECAcQCw"
+                        <span><strong>Samedi 24 Août 2019, à 11h le matin</strong></span>
+                        <span>Mairie d'Alos</span>
+                        <span>Quartier d'Alos</span>
+                        <p>Cette fois-ci, ça y est ! Retrouvons-nous à la mairie d'Alos pour le mariage civil. La cérémonie sera courte et s'adresse notamment à la famille proche.</p>
+                        <a href="https://www.google.fr/maps/place/09200+Alos/@42.9013197,1.0967835,13z/data=!3m1!4b1!4m5!3m4!1s0x12a8c97e93e17751:0x406f69c2f436320!8m2!3d42.908083!4d1.1451"
                            target="_blank">Voir sur Google Maps</a>
                     </div>
                 </div>
@@ -691,36 +346,33 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                     <div class="ceromony-content">
                         <h3>Mariage à l'église</h3>
                         <span><strong>Samedi 24 Août 2019</strong></span>
-                        <span>Château d'Alos, Route d'Alos, 09200 Alos</span>
-                        <p>Rien de tel qu’une petite Église ariégeoise bien cachée dans la montée du village d’Alos pour s’unir devant Dieu et son Eglise. <a href="#rsvp">Vérifiez que vous êtes invités !</a></p>
-                          
+                        <span>Eglise d'Alos, Route d'Alos, 09200 Alos</span>
+                        <p>Rien de tel qu’une petite Église ariégeoise bien cachée dans la montée du village d’Alos pour s’unir devant Dieu et son Eglise.</p>
                           <p><strong>Organisation</strong>
                           <ul style="list-style-type: circle; margin-left: 20px;">
                             <li>La cérémonie religieuse sera suivie par un cocktail dans les jardins du château.</li>
-                            <li>Pour ceux invités, s'ne suivra un diner servi dans le potager.</li>
+                            <li>Pour les invités, s'en suivra un dîner servi dans le potager.</li>
                             <li>Enfin, nous terminerons de manifester notre joie sur la piste de danse.</li>
                           </ul>
-                          <br>Si vous souhaiter faire un discours, vous pouvez nous demander !
                           </p>
                           <p><strong>Comment venir ?</strong><br>
                           La grande ville la plus proche est Toulouse, mais elle reste loin ! Une voiture est requise pour faire le voyage jusqu'à nous !
                           Pensez-donc au covoit style Blablacar, au groupe Facebook que nous avons créé avec tous les invités ou encore à louer une voiture à plusieurs, c'est moins cher que l'on croit (happycar.fr, rentalcars.com).
                             <ul>
-                              <li>En voiture: prendre l’autoroute (80%) puis la nationale (15%) puis les routes de montagnes (5%)</li>
+                              <li>En voiture: prendre l’autoroute (80%) puis la nationale (15%) puis les routes de montagne.</li>
                               <li>En avion jusqu'à l'aéroport de Toulouse puis en voiture jusqu'à Alos.</li>
-                              <li>En train (4 à 7h selon type de train) jusqu'à la gare de Toulouse, puis TER et bus jusqu'à Saint-Girons. Ensuite les 12 derniers kilomètres en voiture :)</li>
+                              <li>En train (4 à 7h selon type de train) jusqu'à la gare de Toulouse ou celle de Foix puis il y a un bus jusqu'à Saint-Girons. Ensuite les 12 derniers kilomètres en voiture.</li>
                             </ul>
                           </p>
                           <p><strong>Où se garer une fois là-bas?</strong><br>
-                          Le château ne dispose pas d'assez de places, donc les invités devront se garer aux abords du château... Il faudra se garer serrer pour que tout le monde puisse se garer.
+                          Le château ne dispose pas d'assez de places, donc les invités devront se garer aux abords du château... Il faudra se garer serrés pour que tout le monde puisse se garer.
                           <ul>
-                            <li>A l’entrée du village d’ados avant le panneau Alos (x30)</li>
+                            <li>A l’entrée du village d’Alos avant le panneau Alos (x30)</li>
                             <li>Sur la place du village (x40)</li>
                             <li>Au niveau du cimetière vers la route de Seix (x10)</li>
-                            <li>Dans l'allée de gauche château pour les personnes ayant des difficultés à marcher (x10)</li>
+                            <li>Dans l'allée de gauche du château pour les personnes ayant des difficultés à marcher (x10)</li>
                           </ul>
                           </p>
-
 <a href="https://www.google.fr/maps/place/09200+Alos/@42.9013197,1.0967835,13z/data=!3m1!4b1!4m5!3m4!1s0x12a8c97e93e17751:0x406f69c2f436320!8m2!3d42.908083!4d1.1451"
                            target="_blank">Voir sur Google Maps</a>
                     </div>
@@ -729,86 +381,6 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
         </div>
     </div>
 </div>
-<!-- service-area end -->
-<!-- gallery area start
-<div id="gallery" class="gallery-area gallery-area2 pb--70">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title2 text-center">
-                    <h2>Our Gellary</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row grid">
-            <div class="col-lg-4 col-md-6 col-12 col-sm-6 grid-item">
-                <div class="gallery-single">
-                    <img src="img/gallery/1.jpg" alt="">
-                    <div class="social-1st">
-                        <ul>
-                            <li><a href="img/gallery/1.jpg" class="expand-img"><i class="fa fa-search"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 col-sm-6 grid-item">
-                <div class="gallery-single">
-                    <img src="img/gallery/4.jpg" alt="">
-                    <div class="social-1st">
-                        <ul>
-                            <li><a href="img/gallery/4.jpg" class="expand-img"><i class="fa fa-search"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 col-sm-6 grid-item">
-                <div class="gallery-single">
-                    <img src="img/gallery/2.jpg" alt="">
-                    <div class="social-1st">
-                        <ul>
-                            <li><a href="img/gallery/2.jpg" class="expand-img"><i class="fa fa-search"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 col-sm-6 grid-item">
-                <div class="gallery-single">
-                    <img src="img/gallery/3.jpg" alt="">
-                    <div class="social-1st">
-                        <ul>
-                            <li> <a href="https://www.youtube.com/watch?v=Wxy80QvnMwA" data-type="iframe" class="expand-video">
-                                <i class="fa fa-play"></i>
-                               </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 col-sm-6 grid-item">
-                <div class="gallery-single">
-                    <img src="img/gallery/5.jpg" alt="">
-                    <div class="social-1st">
-                        <ul>
-                            <li><a href="img/gallery/5.jpg" class="expand-img"><i class="fa fa-search"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 col-sm-6 grid-item">
-                <div class="gallery-single">
-                    <img src="img/gallery/6.jpg" alt="">
-                    <div class="social-1st">
-                        <ul>
-                            <li><a href="img/gallery/6.jpg" class="expand-img"><i class="fa fa-search"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-gallery area end -->
-<!-- guest-area strat -->
 <div id="rsvp" class="guest-area guest-2">
     <div class="container">
         <div class="row">
@@ -818,57 +390,18 @@ gallery area end -->
                         <div class="section-title2 section-title3 text-center">
                             <h2>Répondez-nous !</h2>
                               <div style="min-height: 50px; padding: 20px;">
-                              <p style="font-weight: bold;">Les réponses ne seront plus prises en compte après le 1<sup>er</sup> Mai 2019 !</p>
-                              <p>Je m'engage à ne seléctionner que mon nom dans la liste</p>
-                              <p>Un problème? &Eacute;crivez-nous à <a href="mailto:love@mariage-poppea-christophe.info">love@popcorn.com</a> !</p>
+                              <p style="font-weight: bold;">Réponse souhaitable avant le 20 juin 2019.</p>
+                              <p style="font-weight: bold;">Pour répondre:
+                              <ul>
+                                <li>Christophe: christophe.db[at]gmail.com</li>
+                                <li>Poppéa: poppea_de_raimondi[at]yahoo.fr</li>
+                                <li>Hubert: hubert.debatz[at]gmail.com</li>
+                                <li>Isabelle: ideramondi[at]yahoo.fr</li>
+                               </ul>
+                            </p>
                           </div>
                         </div>
                     </div>
-                    <div id="loader" class="loader loader--style3" style="display: none;" title="2">
-                        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                            <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
-                                <animateTransform attributeType="xml" attributeName="transform"
-                                    type="rotate"
-                                    from="0 25 25"
-                                    to="360 25 25"
-                                    dur="0.6s"
-                                    repeatCount="indefinite"
-                                />
-                            </path>
-                        </svg>
-                    </div>
-                    <fieldset class="contact-form form-style" style="margin: 10px; padding-bottom: 15px; padding-left: 19px; padding-right: 10px; border: 1px solid gray;">
-                        <div class="row">
-                            <div class="col col-sm-12 text-center">
-                                <select class="form-control" id="guest">
-                                    <option disabled selected>Je cherche mon nom ici</option>
-                                </select>
-                            </div>
-                            <div class="col-12" id="already-resa" style="display: none; padding: 20px; color: #000000;"></div>
-                        </div>
-                        <ul id="reservations" style="display: none;">
-                            <h3 style="color: #000000; font-weight: bold">Je participe...</h3>
-                            <li id="container-fiancailles" style="display: none; overflow: scroll-x">
-                                <label for="response-fiancailles">Aux fiançailles
-                                <input type="checkbox" id="response-fiancailles" name="fiancailles" value="1" /></label>
-                            </li>
-                            <li id="container-mairie" style="display: none; overflow: scroll-x;">
-                                <label for="response-mairie">Au déjeuner après la Mairie
-                                <input type="checkbox" id="response-mairie" name="mairie" value="1" /></label>
-                            </li>
-                            <li id="container-eglise" style="display: none; overflow: scroll-x;">
-                                <label for="response-eglise">Au cocktail après l'église
-                                <div style="font-size: 11px; color: black;">Ne pas oublier de nous communiquer votre adresse postale pour l'envoi du faire-part (<a href="mailto: love@mariage-poppea-christophe.info">je donne mon adresse</a>)</div>
-                                <input type="checkbox" id="response-eglise" name="eglise" value="1" /></label>
-                            </li>
-                            <li id="container-diner" style="display: none; overflow: scroll-x;">
-                                <label for="response-diner">Au dîner après le cocktail
-                                <div style="font-size: 11px; color: black;">Ne pas oublier de nous communiquer votre adresse postale pour l'envoi du faire-part (<a href="mailto: love@mariage-poppea-christophe.info">cje donne mon adresse</a>)</div>
-                                <input type="checkbox" id="response-diner" name="diner" value="1" /></label>
-                            </li>
-                        </ul>
-                    </fieldset>
                 </div>
             </div>
         </div>
@@ -880,13 +413,13 @@ gallery area end -->
             <div class="section-title2 text-center">
                 <h2>Se loger à proximité</h2>
                 <p>Alos c’est un petit coin de verdure où vous trouverez des hotels, maisons d’hôtes et auberges traditionnels/elles, confortables, à des prix abordables et à seulement quelques kilomètres de l’Eglise et du lieu de réception. 
-N’oubliez pas de réserver au plus vite pour être sur d’avoir un pied à terre. 
+N’oubliez pas de réserver au plus vite pour être sûr d’avoir un pied à terre (nous n'avons malheureusement pas pu réserver des chambres pour les invités du mariage).
 </p><p>Pour les plus aventureux, il est possible d'amener sa tente pour camper dans le champ bordant le château !</p>
               <p style="margin: 20px;">
                 <h3 style="font-size: 23px;">Sur place</h3>
                 <ul>
                   <li>Champ aux alentours du château<br>
-                  <span style="font-style: italic; color: gray;">Ramener sa tente et le nécessaire</span>
+                  <span style="font-style: italic; color: gray;">Amener sa tente et le nécessaire de camping (on fournit douche et WC).</span>
                 </li>
                 <ul>
               </p>
@@ -917,14 +450,6 @@ N’oubliez pas de réserver au plus vite pour être sur d’avoir un pied à te
                   <div style="min-height: 30px;">&nbsp;</div>
             </div>
         </div>
-        <!--<div class="gift-item">-->
-        <!--<div class="Gift-carousel owl-carousel">-->
-        <!--<img src="img/gift/3.png" alt="clinet">-->
-        <!--<img src="img/gift/2.png" alt="clinet">-->
-        <!--<img src="img/gift/3.png" alt="clinet">-->
-        <!--<img src="img/gift/4.png" alt="clinet">-->
-        <!--</div>-->
-        <!--</div>-->
     </div>
 </div>
 
@@ -934,13 +459,12 @@ N’oubliez pas de réserver au plus vite pour être sur d’avoir un pied à te
             <div class="col-lg-12">
                 <div class="welcome-content welcome-content2">
                     <h2>Nous avons hâte de tous vous retrouver !</h2>
-                    <div class="btn btn2"><a href="index.php#rsvp">Répondez-nous en cliquant ici !</a></div>
+                    <!-- <div class="btn btn2"><a href="index.php#rsvp">Répondez-nous en cliquant ici !</a></div> -->
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <!-- guest-area end -->
 <!-- Gift Registration start -->
 <div id="gifts" class="Gift-area pt--100 pb--30">
@@ -950,16 +474,18 @@ N’oubliez pas de réserver au plus vite pour être sur d’avoir un pied à te
                 <h2>Liste de mariage</h2>
                     <div style="margin: 30px;">
                       <div class="btn">
-                        <a href="http://www.millemercismariage.com/poppea-christophe/mariage-de-christophe-de+batz-et-poppea-de+raimondi.html" target="_blank">
+                        <a href="http://www.millemercismariage.com/poppea-christophe/liste.html" target="_blank">
                             <img src="img/view-list.png" alt="Voir la liste de mariage">
                         </a>
                        </div>
                     </div>
-                    <div style="margin: 30px;">
-                      <div class="btn"><a style="background-color: lightgray; color: black;" href="https://paypal.me/pools/c/88XGb9V7pf" target="_blank">
-                      Cliquez ici pour participer à nos projets !
-                    </a></div>
-                  </div>
+                    <!--<div style="margin: 30px;">
+                      <div class="btn">
+                        <a style="background-color: lightgray; color: black;" href="https://paypal.me/pools/c/88XGb9V7pf" target="_blank">
+                            Cliquez ici pour participer à nos projets !
+                        </a>
+                       </div>
+                    </div>-->
             </div>
         </div>
     </div>

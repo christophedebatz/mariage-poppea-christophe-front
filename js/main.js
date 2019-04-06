@@ -106,21 +106,17 @@ $(document).ready(function () {
         .show();
     } else {
       let text = '';
-      if (user.fiancailles) {
-        $('#container-fiancailles').show();
-        text += `<li>Soirée de Fiancailles: <strong style="color: #000000;">${reservation.fiancailles ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-      }
-      if (user.mairie) {
-        $('#container-mairie').show();
-        text += `<li>Cocktail après mairie: <strong style="color: #000000;">${reservation.mairie ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-      }
       if (user.eglise) {
         $('#container-eglise').show();
-        text += `<li>Cocktail après le mariage à l'église: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+        text += `<li>Messe suivi du cocktail à 16h: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
       }
       if (user.diner) {
         $('#container-diner').show();
-        text += `<li>Diner après le cocktail: <strong style="color: #000000;">${reservation.diner ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+        text += `<li>Diner après cocktail à 20h: <strong style="color: #000000;">${reservation.diner ? 'je participe' : 'je ne participe pas'}</strong></li>`;
+      }
+      if (user.brunch) {
+        $('#container-brunch').show();
+        text += `<li>Brunch le dimanche à 11h: <strong style="color: #000000;">${reservation.brunch ? 'je participe' : 'je ne participe pas'}</strong></li>`;
       }
       $('#already-resa')
         .html(`Bonjour <strong>${user.fullName}</strong>, voici tes réponses actuelles:<ul style="list-style: circle; margin-left: 30px;">${text}</ul>`)
@@ -128,10 +124,26 @@ $(document).ready(function () {
     }
   }
 
+  function debounce (func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    }
+  }
+
   $(function () {
 
+    let self = this;
     let _guests = [];
-    let currentUser = null;
+    self.currentUser = null;
     
     $('#loader').show();
     $.ajaxSetup({ cache: false });
@@ -153,24 +165,22 @@ $(document).ready(function () {
         $('#loader').show();
         let userId = parseInt(document.getElementById('guest').value);
         let userName = $('#guest option:selected').text().replace(' - témoin', '');
-        $('#container-fiancailles').hide();
-        $('#container-mairie').hide();
+        $('#container-brunch').hide();
         $('#container-eglise').hide();
-        $('#container-diner').hide();console.log('--1--');
+        $('#container-diner').hide();
 
         $.getJSON(`booking.php?userId=${userId}`, function (book) {
           if (book.reservation && book.user) {
+            self.currentUser = book.user;
             let reservation = book.reservation;
-            currentUser = book.user;
-            console.log('currentUser=', currentUser);
             $('#response-eglise').prop('checked', reservation.eglise);
-            $('#response-mairie').prop('checked', reservation.mairie);
             $('#response-diner').prop('checked', reservation.diner);
-            $('#response-fiancailles').prop('checked', reservation.fiancailles);
-            writeText(currentUser, reservation);
+            $('#response-brunch').prop('checked', reservation.brunch);
+            $('#address').prop('value', reservation.address);
+            writeText(self.currentUser, reservation);
           }
         })
-          .error(function () {
+          .error(function (e) {
             let selectedGuest = null;
             for (let i = 0; i < _guests.length; i++) {
               let guest = _guests[i];
@@ -180,63 +190,68 @@ $(document).ready(function () {
               }
             }
             writeText(selectedGuest, null);
-            $('#response-fiancailles').prop('checked', false);
-            $('#response-mairie').prop('checked', false);
             $('#response-eglise').prop('checked', false);
             $('#response-diner').prop('checked', false);
-            if (selectedGuest.fiancailles) $('#container-fiancailles').show();
-            if (selectedGuest.mairie) $('#container-mairie').show();
+            $('#response-brunch').prop('checked', false);
+            $('#address').prop('value', '');
             if (selectedGuest.eglise) $('#container-eglise').show();
             if (selectedGuest.diner) $('#container-diner').show();
+            if (selectedGuest.brunch) $('#container-brunch').show();
+            self.currentUser = selectedGuest;
           })
           .complete(function () {
             $('#loader').hide();
             $('#reservations').show();
-            document.getElementById('response-fiancailles').addEventListener('change', function (e) {
+            document.getElementById('address').addEventListener('blur', function (e) {
               e.preventDefault();
-              changeListener(userId);
+              changeListener(self.currentUser);
             });
-            document.getElementById('response-mairie').addEventListener('change', function (e) {
-              e.preventDefault();
-              changeListener(userId);
-            });
+            var saveTypedAddress = debounce(function() {
+                changeListener(self.currentUser, false);
+              }, 500)
+            document.getElementById('address').addEventListener('keyup', saveTypedAddress);
             document.getElementById('response-eglise').addEventListener('change', function (e) {
-              e.preventDefault();
-              changeListener(userId);
+              e.stopImmediatePropagation();
+              changeListener(self.currentUser);
             });
             document.getElementById('response-diner').addEventListener('change', function (e) {
-              e.preventDefault();
-              changeListener(userId);
+              e.stopImmediatePropagation();
+              changeListener(self.currentUser);
+            });
+            document.getElementById('response-brunch').addEventListener('change', function (e) {
+              e.stopImmediatePropagation();
+              changeListener(self.currentUser);
             });
           });
       });
 
-    function changeListener(userId) {
-      let fiancailles = $('#response-fiancailles').prop('checked');
+    function changeListener(user, displayToast = true) {
       let eglise = $('#response-eglise').prop('checked');
-      let mairie = $('#response-mairie').prop('checked');
       let diner = $('#response-diner').prop('checked');
-      postResponse(userId, fiancailles, mairie, eglise, diner, function (err, data) {
+      let brunch = $('#response-brunch').prop('checked');
+      let address = $('#address').val();
+      postResponse(user.userId, brunch, eglise, diner, address, function (err, data) {
         if (!err) {
           let book = {
-            user: currentUser,
+            address,
+            user,
             reservation: {
-              fiancailles,
-              mairie,
+              brunch,
               eglise,
               diner
             }
           };
-      console.log('book=', book)
           writeText(book.user, book.reservation);
-          $.toast({
-              heading: 'Success',
-              text: 'Réponse enregistrée avec succès !',
-              showHideTransition: 'slide',
-              icon: 'success',
-              position: 'top-right',
-              loaderBg: '#b6d65a'
-          });
+          if (displayToast) {
+            $.toast({
+                heading: 'Bien joué !',
+                text: 'Réponse enregistrée avec succès !',
+                showHideTransition: 'slide',
+                icon: 'success',
+                position: 'top-right',
+                loaderBg: '#b6d65a'
+            });
+          }
         } else {
           $.toast({
             heading: 'Error',
@@ -249,11 +264,11 @@ $(document).ready(function () {
       });
     }
 
-    function postResponse(userId, fiancailles, mairie, eglise, diner, callback) {
+    function postResponse(userId, brunch, eglise, diner, address, callback) {
       $.ajax({
         type: 'POST',
         url: `booking.php?bookUserId=${userId}`,
-        data: JSON.stringify({'fiancailles': fiancailles ? 1 : 0, 'mairie': mairie ? 1 : 0, 'eglise': eglise ? 1 : 0, 'diner': diner ? 1 : 0}),
+        data: JSON.stringify({'address': address, 'brunch': brunch ? 1 : 0, 'eglise': eglise ? 1 : 0, 'diner': diner ? 1 : 0}),
         success: function (data) {
           callback(false, data);
         },
