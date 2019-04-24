@@ -75,7 +75,7 @@
                                 <li><a href="index.php#about-us">NOUS</a></li>
                                 <li><a href="index.php#story">NOTRE HISTOIRE</a></li>
                                 <li><a href="index.php#info">INFOS</a></li>
-                                <!-- <li><a href="index.php#rsvp">RSVP</a></li> -->
+                                <li><a href="index.php#rsvp">RSVP</a></li>
                                 <li><a href="index.php#hotels">LOGEMENTS</a></li>
                                 <!-- <li><a href="index.php#activities">SUR PLACE</a></li> -->
                                 <li><a href="index.php#gifts">LISTE DE MARIAGE</a></li>
@@ -382,6 +382,14 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
     </div>
 </div>
 <div id="rsvp" class="guest-area guest-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">&nbsp;
+            </div>
+        </div>
+    </div>
+</div>
+<div id="rsvp" class="service-area service-area2 ptb--100">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
