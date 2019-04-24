@@ -392,21 +392,23 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
 <div id="rsvp" class="service-area service-area2 ptb--100">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="guest-wrap">
-                    <div class="col-12">
-                        <div class="section-title2 section-title3 text-center">
-                            <h2>Répondez-nous !</h2>
-                              <div style="min-height: 50px; padding: 20px;">
-                              <p style="font-weight: bold;">Réponse souhaitable avant le 20 juin 2019.</p>
-                              <p style="font-weight: bold;">Pour répondre:
-                              <ul>
-                                <li>Christophe: christophe.db[at]gmail.com</li>
-                                <li>Poppéa: poppea_de_raimondi[at]yahoo.fr</li>
-                                <li>Hubert: hubert.debatz[at]gmail.com</li>
-                                <li>Isabelle: ideramondi[at]yahoo.fr</li>
-                               </ul>
-                            </p>
+            <div class="Ceremony-wrap">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="ceromony-content ceromony-content2">
+                            <div class="section-title2 section-title3 text-center">
+                                <h2>Répondez-nous !</h2>
+                                  <div style="min-height: 50px; padding: 20px;">
+                                  <p style="font-weight: bold;">Réponse souhaitable avant le 20 juin 2019.</p>
+                                  <p style="font-weight: bold;">Pour répondre:
+                                  <ul>
+                                    <li>Christophe: christophe.db[at]gmail.com</li>
+                                    <li>Poppéa: poppea_de_raimondi[at]yahoo.fr</li>
+                                    <li>Hubert: hubert.debatz[at]gmail.com</li>
+                                    <li>Isabelle: ideramondi[at]yahoo.fr</li>
+                                   </ul>
+                                </p>
+                            </div>
                           </div>
                         </div>
                     </div>
