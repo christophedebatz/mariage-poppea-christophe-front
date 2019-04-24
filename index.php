@@ -384,23 +384,10 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
 <div id="rsvp" class="guest-area guest-2">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2">&nbsp;
-            </div>
-        </div>
-    </div>
-</div>
-<div id="rsvp" class="service-area service-area2 ptb--100">
-    <div class="container">
-        <div class="col-l2">
-            <div class="section-title2 text-center">
-                <h2>Notre histoire</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="Ceremony-wrap">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title2 section-title3 text-center">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="guest-wrap">
+                    <div class="col-12">
+                        <div class="section-title2 section-title3 text-center" style="color: white !important;">
                             <h2>Répondez-nous !</h2>
                               <div style="min-height: 50px; padding: 20px;">
                               <p style="font-weight: bold;">Réponse souhaitable avant le 20 juin 2019.</p>
