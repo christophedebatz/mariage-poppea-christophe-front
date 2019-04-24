@@ -391,13 +391,14 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                             <h2>Répondez-nous !</h2>
                               <div style="min-height: 50px; padding: 20px;">
                               <p style="font-weight: bold;">Réponse souhaitable avant le 20 juin 2019.</p>
-                              <p style="font-weight: bold;">Pour répondre:
+                              <p style="font-weight: bold;">Pour répondre par e-mail:
                               <ul>
                                 <li>Christophe: christophe.db[at]gmail.com</li>
                                 <li>Poppéa: poppea_de_raimondi[at]yahoo.fr</li>
                                 <li>Hubert: hubert.debatz[at]gmail.com</li>
                                 <li>Isabelle: ideramondi[at]yahoo.fr</li>
                                </ul>
+                               Vous pouvez aussi répondre par voie postale (voir les cartons d'invitation).
                             </p>
                           </div>
                         </div>
