@@ -530,7 +530,7 @@ N’oubliez pas de réserver au plus vite pour être sûr d’avoir un pied à t
 <!-- jquery-sticky-menu.js -->
 <script src="js/jquery-sticky-menu.js"></script>
 <!-- jquery-validation.js -->
-<script src="js/jquery.toast.js"></script>
+<!--<script src="js/jquery.toast.js"></script>-->
 
 <!-- main.js -->
 <script src="js/main.js"></script>
