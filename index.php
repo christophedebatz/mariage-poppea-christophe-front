@@ -379,6 +379,20 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                 </div>
             </div>
         </div>
+        <div class="Ceremony-wrap">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ceromony-content">
+                        <h3>Informations importantes</h3>
+                        <ul type="disc" style="list-style: circle !important; color: black !important;">
+                            <li>Il existe un service de taxi depuis et vers Saint Girons. Il faudra simplement réserver à l'avance auprès de la mairie ou encore sur <a href="http://www.itaxis.fr/saint-girons-09200.htm" target="_blank">ce type de site</a>.</li>
+                            <li>Même si vous avez décidé de ne pas camper sur place, vous pouvez néamoins ramener une tente pour la proposer aux invités qui n'en ont pas.</li>
+                            <li>Nous avons mis en place un groupe Facebook pour le covoiturage, <a href="https://www.facebook.com/groups/covoiturage.poppea.christophe" target="_blank">dispo ici</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div id="rsvp" class="guest-area guest-2">
@@ -391,7 +405,7 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                             <h2>Répondez-nous !</h2>
                               <div style="min-height: 50px; padding: 20px;">
                               <p style="font-weight: bold;">Réponse souhaitable avant le 20 juin 2019.</p>
-                              <p style="font-weight: bold;">Pour répondre par e-mail:<br>
+                              <p style="font-weight: bold; margin-top: 20px;">Pour répondre par e-mail:
                               <ul>
                                 <li>Christophe: christophe.db[at]gmail.com</li>
                                 <li>Poppéa: poppea_de_raimondi[at]yahoo.fr</li>
@@ -399,7 +413,7 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
                                 <li>Isabelle: ideramondi[at]yahoo.fr</li>
                                </ul>
                             </p>
-                            <p style="font-weight: bold;">
+                            <p style="font-weight: bold; margin-top: 20px;">
                                Vous pouvez aussi répondre par voie postale (voir les cartons d'invitation).
                             </p>
                           </div>
