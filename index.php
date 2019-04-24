@@ -391,24 +391,27 @@ Entre nous: une grande complicité et beaucoup d’amour.</p>
 </div>
 <div id="rsvp" class="service-area service-area2 ptb--100">
     <div class="container">
+        <div class="col-l2">
+            <div class="section-title2 text-center">
+                <h2>Notre histoire</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="Ceremony-wrap">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <div class="ceromony-content ceromony-content2">
-                            <div class="section-title2 section-title3 text-center">
-                                <h2>Répondez-nous !</h2>
-                                  <div style="min-height: 50px; padding: 20px;">
-                                  <p style="font-weight: bold;">Réponse souhaitable avant le 20 juin 2019.</p>
-                                  <p style="font-weight: bold;">Pour répondre:
-                                  <ul>
-                                    <li>Christophe: christophe.db[at]gmail.com</li>
-                                    <li>Poppéa: poppea_de_raimondi[at]yahoo.fr</li>
-                                    <li>Hubert: hubert.debatz[at]gmail.com</li>
-                                    <li>Isabelle: ideramondi[at]yahoo.fr</li>
-                                   </ul>
-                                </p>
-                            </div>
+                    <div class="col-lg-12">
+                        <div class="section-title2 section-title3 text-center">
+                            <h2>Répondez-nous !</h2>
+                              <div style="min-height: 50px; padding: 20px;">
+                              <p style="font-weight: bold;">Réponse souhaitable avant le 20 juin 2019.</p>
+                              <p style="font-weight: bold;">Pour répondre:
+                              <ul>
+                                <li>Christophe: christophe.db[at]gmail.com</li>
+                                <li>Poppéa: poppea_de_raimondi[at]yahoo.fr</li>
+                                <li>Hubert: hubert.debatz[at]gmail.com</li>
+                                <li>Isabelle: ideramondi[at]yahoo.fr</li>
+                               </ul>
+                            </p>
                           </div>
                         </div>
                     </div>
