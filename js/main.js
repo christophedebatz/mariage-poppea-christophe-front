@@ -339,7 +339,7 @@ $(document).ready(function () {
   }
 
   countdown('24/08/2019', (endtime, id) => {
-    let t = new Date("Aug 24, 2019 17:00:00").getTime() - new Date().getTime();
+    let t = new Date("Aug 24, 2019 16:00:00").getTime() - new Date().getTime();
     if (t <= 0) {
       clearInterval(id);
     }
