@@ -97,32 +97,7 @@ $(document).ready(function () {
   $('#nav_mobile_menu').slicknav({
     prependTo: "#mobile_menu"
   });
-
-  function writeText (user, reservation) {
-    $('#reservations').show();
-    if (!reservation) {
-      $('#already-resa')
-        .html(`Bonjour <strong>${user.fullName}</strong>, tu n'as pas encore répondu aux invitations, nous t'invitons à le faire dès maintenant !`)
-        .show();
-    } else {
-      let text = '';
-      if (user.eglise) {
-        $('#container-eglise').show();
-        text += `<li>Messe suivi du cocktail à 16h: <strong style="color: #000000;">${reservation.eglise ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-      }
-      if (user.diner) {
-        $('#container-diner').show();
-        text += `<li>Diner après cocktail à 20h: <strong style="color: #000000;">${reservation.diner ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-      }
-      if (user.brunch) {
-        $('#container-brunch').show();
-        text += `<li>Brunch le dimanche à 11h: <strong style="color: #000000;">${reservation.brunch ? 'je participe' : 'je ne participe pas'}</strong></li>`;
-      }
-      $('#already-resa')
-        .html(`Bonjour <strong>${user.fullName}</strong>, voici tes réponses actuelles:<ul style="list-style: circle; margin-left: 30px;">${text}</ul>`)
-        .show();
-    }
-  }
+  
 
   function debounce (func, wait, immediate) {
     var timeout;

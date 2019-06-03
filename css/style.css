@@ -2302,7 +2302,9 @@ h4.comment-title {
     cursor: pointer !important;
     font-weight: bold;
 }
-
+.main-menu > a {
+    font-size: 15px !im;
+}
 .section-title2 h2 {
   color: #000000 !important;
 }

@@ -1,10 +1,12 @@
 // Sticky Header
 $(window).scroll(function() {
 
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 150) {
         $('.main_h').addClass('sticky');
+        document.getElementById('logo').style.display = 'none'
     } else {
         $('.main_h').removeClass('sticky');
+        document.getElementById('logo').style.display = 'block'
     }
 });
 
